@@ -10,6 +10,7 @@ Based on https://nx.dev/docs/technologies/angular/guides/dynamic-module-federati
 4. pnpx nx g @nx/angular:host apps/main-host --prefix=nx-mf-df
 5. pnpx nx g @nx/angular:remote apps/mf_remote_a --prefix=nx-mf-df --host=main-host
 6. pnpx nx g @nx/angular:remote apps/mf_remote_b --prefix=nx-mf-df --host=main-host
+7. npx nx g @nx/angular:remote apps/mf_remote_home --prefix=nx-mf-df --host=main-host
 
 
 
