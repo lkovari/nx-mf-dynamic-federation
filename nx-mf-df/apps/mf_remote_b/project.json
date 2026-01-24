@@ -1,0 +1,112 @@
+{
+  "name": "mf_remote_b",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "nx-mf-df",
+  "sourceRoot": "apps/mf_remote_b/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/mf_remote_b",
+        "index": "apps/mf_remote_b/src/index.html",
+        "main": "apps/mf_remote_b/src/main.ts",
+        "tsConfig": "apps/mf_remote_b/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/mf_remote_b/public"
+          }
+        ],
+        "styles": ["apps/mf_remote_b/src/styles.scss"],
+        "customWebpackConfig": {
+          "path": "apps/mf_remote_b/webpack.config.ts"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/mf_remote_b/webpack.prod.config.ts"
+          }
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/angular:dev-server",
+      "options": {
+        "port": 4202,
+        "publicHost": "http://localhost:4202"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "mf_remote_b:build:production"
+        },
+        "development": {
+          "buildTarget": "mf_remote_b:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "dependsOn": ["main-host:serve"]
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "mf_remote_b:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../coverage/apps/mf_remote_b"
+      }
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "defaultConfiguration": "production",
+      "options": {
+        "buildTarget": "mf_remote_b:build",
+        "port": 4202,
+        "watch": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mf_remote_b:build:development"
+        },
+        "production": {
+          "buildTarget": "mf_remote_b:build:production"
+        }
+      }
+    }
+  }
+}

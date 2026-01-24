@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "mf_remote_a/Routes": [
+        "apps/mf_remote_a/src/app/remote-entry/entry.routes.ts"
+      ],
+      "mf_remote_b/Routes": [
+        "apps/mf_remote_b/src/app/remote-entry/entry.routes.ts"
+      ],
+      "mf_remote_home/Routes": [
+        "apps/mf_remote_home/src/app/remote-entry/entry.routes.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

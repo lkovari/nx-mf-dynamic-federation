@@ -1,0 +1,9 @@
+{
+  "name": "main-host-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/main-host-e2e/src",
+  "implicitDependencies": ["main-host"],
+  "// targets": "to see all targets run: nx show project main-host-e2e --web",
+  "targets": {}
+}

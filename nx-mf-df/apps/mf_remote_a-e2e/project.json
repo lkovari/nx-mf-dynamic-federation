@@ -1,0 +1,9 @@
+{
+  "name": "mf_remote_a-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/mf_remote_a-e2e/src",
+  "implicitDependencies": ["mf_remote_a"],
+  "// targets": "to see all targets run: nx show project mf_remote_a-e2e --web",
+  "targets": {}
+}
