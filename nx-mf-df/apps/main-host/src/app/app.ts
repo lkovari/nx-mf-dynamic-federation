@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Header } from './shared/components/header/header';
+import { Footer } from './shared/components/footer/footer';
+import { Main } from './shared/components/main/main';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
   selector: 'nx-mf-df-root',
+  imports: [Header, Footer, Main],
   templateUrl: './app.html',
   styleUrl: './app.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class App {
-  protected title = 'main-host';
-}
+export class App {}

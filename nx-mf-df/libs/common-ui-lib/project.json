@@ -1,0 +1,39 @@
+{
+  "name": "common-ui-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/common-ui-lib/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["type:lib"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "dependsOn": ["update-nx-version"],
+      "options": {
+        "project": "libs/common-ui-lib/ng-package.json",
+        "tsConfig": "libs/common-ui-lib/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/common-ui-lib/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "update-nx-version": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node libs/common-ui-lib/scripts/update-nx-version.js"
+      }
+    },
+    "test": {
+      "executor": "@nx/angular:unit-test",
+      "options": {}
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

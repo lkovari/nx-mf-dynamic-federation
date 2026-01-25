@@ -1,0 +1,28 @@
+.app-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  height: 100vh;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+app-header {
+  grid-area: header;
+  flex-shrink: 0;
+}
+
+app-main {
+  grid-area: main;
+  min-height: 0;
+  overflow: hidden;
+}
+
+app-footer {
+  grid-area: footer;
+  flex-shrink: 0;
+}

@@ -1,0 +1,1412 @@
+{
+  "nx-mf-df/libs/common-ui-lib": {
+    "root": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "nx-mf-df/libs/common-ui-lib/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.project": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.tsConfig": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.update-nx-version": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.update-nx-version.executor": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.update-nx-version.options": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.update-nx-version.options.command": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "nx-mf-df/libs/common-ui-lib/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/main-host": {
+    "root": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.customWebpackConfig": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.customWebpackConfig": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.buildOptimizer": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.vendorChunk": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.namedChunks": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.publicHost": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.buildTarget": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.reportsDirectory": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.continuous": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.port": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.spa": [
+      "nx-mf-df/apps/main-host/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/main-host-e2e": {
+    "root": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.main-host": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/main-host-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/mf_remote_a": {
+    "root": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.customWebpackConfig": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.customWebpackConfig": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.buildOptimizer": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.vendorChunk": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.namedChunks": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.publicHost": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.buildTarget": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.reportsDirectory": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.continuous": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.port": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.watch": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development.buildTarget": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production.buildTarget": [
+      "nx-mf-df/apps/mf_remote_a/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/mf_remote_a-e2e": {
+    "root": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.mf_remote_a": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/mf_remote_b": {
+    "root": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.customWebpackConfig": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.customWebpackConfig": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.buildOptimizer": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.vendorChunk": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.namedChunks": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.publicHost": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.buildTarget": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.reportsDirectory": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.continuous": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.port": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.watch": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development.buildTarget": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production.buildTarget": [
+      "nx-mf-df/apps/mf_remote_b/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/mf_remote_b-e2e": {
+    "root": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.mf_remote_b": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/mf_remote_home": {
+    "root": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.customWebpackConfig": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.customWebpackConfig": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.buildOptimizer": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.vendorChunk": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.namedChunks": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.publicHost": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.buildTarget": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.reportsDirectory": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.continuous": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.defaultConfiguration": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.port": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.watch": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development.buildTarget": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production.buildTarget": [
+      "nx-mf-df/apps/mf_remote_home/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "nx-mf-df/apps/mf_remote_home-e2e": {
+    "root": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.mf_remote_home": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

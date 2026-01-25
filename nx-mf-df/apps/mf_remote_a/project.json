@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "nx-mf-df",
   "sourceRoot": "apps/mf_remote_a/src",
-  "tags": [],
+  "tags": ["type:app"],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",

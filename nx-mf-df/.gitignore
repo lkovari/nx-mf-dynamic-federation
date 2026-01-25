@@ -7,6 +7,7 @@ out-tsc
 
 # dependencies
 node_modules
+.pnpm-store
 
 # IDEs and editors
 /.idea
@@ -38,9 +39,15 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# Nx cache and workspace data
 .nx/cache
 .nx/workspace-data
+cache/workspace-data
+**/cache/workspace-data
+.nx/*
+!.nx/workspace
 
 .angular
 
 vitest.config.*.timestamp*
+__screenshots__/
