@@ -7,9 +7,11 @@ https://www.angulararchitects.io/en/blog/dynamic-module-federation-with-angular/
 https://dev.to/mayur_kulkarni_126/step-by-step-guide-to-angular-microfrontends-with-nx-and-dynamic-module-federation-2e04
 https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4
 
-## This project under construction.
-### Known bugs:
-- fix lint errors
+## This project is under construction!
+
+### Known bugs and TODOs:
+- fix all warnings!
+- fix lint errors!
 - implement tests
 - convert module federation to dynamic federation
 - install sass and tailwind, therefore optimize css

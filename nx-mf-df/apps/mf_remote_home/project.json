@@ -61,6 +61,7 @@
       "executor": "@nx/angular:dev-server",
       "options": {
         "port": 4203,
+        "host": "0.0.0.0",
         "publicHost": "http://localhost:4203"
       },
       "configurations": {
@@ -71,8 +72,7 @@
           "buildTarget": "mf_remote_home:build:development"
         }
       },
-      "defaultConfiguration": "development",
-      "dependsOn": ["main-host:serve"]
+      "defaultConfiguration": "development"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",

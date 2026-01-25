@@ -1,0 +1,113 @@
+services:
+  main-host:
+    build:
+      context: ./nx-mf-df
+      dockerfile: ../Dockerfile
+    container_name: nx-mf-main-host
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./nx-mf-df:/workspace
+      - /workspace/node_modules
+      - /workspace/.nx
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+    command: pnpm nx serve main-host
+    networks:
+      - nx-mf-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4200"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  mf-remote-a:
+    build:
+      context: ./nx-mf-df
+      dockerfile: ../Dockerfile
+    container_name: nx-mf-remote-a
+    ports:
+      - "4201:4201"
+    volumes:
+      - ./nx-mf-df:/workspace
+      - /workspace/node_modules
+      - /workspace/.nx
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+    command: pnpm nx serve mf_remote_a
+    depends_on:
+      main-host:
+        condition: service_healthy
+    networks:
+      - nx-mf-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4201"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  mf-remote-b:
+    build:
+      context: ./nx-mf-df
+      dockerfile: ../Dockerfile
+    container_name: nx-mf-remote-b
+    ports:
+      - "4202:4202"
+    volumes:
+      - ./nx-mf-df:/workspace
+      - /workspace/node_modules
+      - /workspace/.nx
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+    command: pnpm nx serve mf_remote_b
+    depends_on:
+      main-host:
+        condition: service_healthy
+    networks:
+      - nx-mf-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4202"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  mf-remote-home:
+    build:
+      context: ./nx-mf-df
+      dockerfile: ../Dockerfile
+    container_name: nx-mf-remote-home
+    ports:
+      - "4203:4203"
+    volumes:
+      - ./nx-mf-df:/workspace
+      - /workspace/node_modules
+      - /workspace/.nx
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+    command: pnpm nx serve mf_remote_home
+    depends_on:
+      main-host:
+        condition: service_healthy
+    networks:
+      - nx-mf-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4203"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+networks:
+  nx-mf-network:
+    driver: bridge

@@ -61,7 +61,9 @@
       "executor": "@nx/angular:module-federation-dev-server",
       "options": {
         "port": 4200,
-        "publicHost": "http://localhost:4200"
+        "host": "0.0.0.0",
+        "publicHost": "http://localhost:4200",
+        "allowedHosts": ["localhost"]
       },
       "configurations": {
         "production": {
