@@ -11,7 +11,7 @@ https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4
 ### Known bugs:
 - fix lint errors
 - implement tests
-- conver module federation to dynamic federation
+- convert module federation to dynamic federation
 - install sass and tailwind
 - 
 
