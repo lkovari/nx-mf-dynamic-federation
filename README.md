@@ -12,8 +12,12 @@ https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4
 - fix lint errors
 - implement tests
 - convert module federation to dynamic federation
-- install sass and tailwind
-- 
+- install sass and tailwind, therefore optimize css
+- restyle all
+- implement global error handling
+- implement global wait spinner
+- implement to put into HTTP header the corelation id for future use.
+- optimize nx usage
 
 ## Create workspace:
 1. pnpx create-nx-workspace@latest ng-mf --preset=apps
