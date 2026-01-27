@@ -22,7 +22,7 @@ https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4
 - optimize nx usage
 
 ## Create workspace:
-1. pnpx create-nx-workspace@latest ng-mf --preset=apps
+1. pnpx create-nx-workspace@latest nx-mf-df --preset=apps
 2. cd nx-mf-df
 3. pnpx nx add @nx/angular
 4. pnpx nx g @nx/angular:host apps/main-host --prefix=nx-mf-df
