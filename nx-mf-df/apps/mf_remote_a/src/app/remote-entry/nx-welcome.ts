@@ -370,53 +370,6 @@ import { CommonModule } from '@angular/common';
       #nx-repo svg {
         color: rgba(24, 23, 23, 1);
       }
-      #nx-cloud {
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-        padding: 2.5rem 2rem;
-      }
-      #nx-cloud > div {
-        align-items: center;
-        display: flex;
-      }
-      #nx-cloud > div svg {
-        border-radius: 0.375rem;
-        flex-shrink: 0;
-        width: 3rem;
-      }
-      #nx-cloud > div h2 {
-        font-size: 1.125rem;
-        font-weight: 400;
-        letter-spacing: -0.025em;
-        line-height: 1.75rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      #nx-cloud > div h2 span {
-        display: block;
-        font-size: 0.875rem;
-        font-weight: 300;
-        line-height: 1.25rem;
-      }
-      #nx-cloud p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-top: 1rem;
-      }
-      #nx-cloud pre {
-        margin-top: 1rem;
-      }
-      #nx-cloud a {
-        border-radius: 0.75rem;
-        color: white;
-        background-color: hsla(214, 62%, 21%, 1);
-        display: inline-block;
-        margin-top: 1.5rem;
-        padding: 0.5rem 1rem;
-        text-align: left;
-        text-decoration: inherit;
-      }
-
       #commands {
         padding: 2.5rem 2rem;
         margin-top: 3.5rem;
@@ -794,36 +747,6 @@ import { CommonModule } from '@angular/common';
                 >
               </span>
             </a>
-            <div id="nx-cloud" class="rounded shadow">
-              <div>
-                <svg
-                  id="nx-cloud-logo"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke="currentColor"
-                  fill="transparent"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-width="2"
-                    d="M23 3.75V6.5c-3.036 0-5.5 2.464-5.5 5.5s-2.464 5.5-5.5 5.5-5.5 2.464-5.5 5.5H3.75C2.232 23 1 21.768 1 20.25V3.75C1 2.232 2.232 1 3.75 1h16.5C21.768 1 23 2.232 23 3.75Z"
-                  />
-                  <path
-                    stroke-width="2"
-                    d="M23 6v14.1667C23 21.7307 21.7307 23 20.1667 23H6c0-3.128 2.53867-5.6667 5.6667-5.6667 3.128 0 5.6666-2.5386 5.6666-5.6666C17.3333 8.53867 19.872 6 23 6Z"
-                  />
-                </svg>
-                <h2>
-                  Nx Cloud
-                  <span> Enable faster CI & better DX </span>
-                </h2>
-              </div>
-              <p>Your Nx Cloud remote cache setup is almost complete.</p>
-
-              <a href="" target="_blank" rel="noreferrer">
-                Click here to finish
-              </a>
-            </div>
           </div>
         </div>
         <!--  COMMANDS  -->
