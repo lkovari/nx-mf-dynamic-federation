@@ -63,7 +63,9 @@
         "port": 4200,
         "host": "0.0.0.0",
         "publicHost": "http://localhost:4200",
-        "allowedHosts": ["localhost"]
+        "allowedHosts": ["localhost"],
+        "devRemotes": ["mf_remote_a", "mf_remote_b", "mf_remote_home"],
+        "pathToManifestFile": "apps/main-host/public/module-federation.manifest.json"
       },
       "configurations": {
         "production": {

@@ -1,11 +1,85 @@
 # nx-mf-dynamic-federation
-Advanced Angular Micro Frontends with Dynamic Module Federation. 
+Advanced Angular Micro Frontends with Dynamic Module Federation.
 
-## Based on the below websites. 
-https://nx.dev/docs/technologies/angular/guides/dynamic-module-federation-with-angular 
-https://www.angulararchitects.io/en/blog/dynamic-module-federation-with-angular/
-https://dev.to/mayur_kulkarni_126/step-by-step-guide-to-angular-microfrontends-with-nx-and-dynamic-module-federation-2e04
-https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4
+## Based on the below websites
+https://nx.dev/docs/technologies/angular/guides/dynamic-module-federation-with-angular  
+https://www.angulararchitects.io/en/blog/dynamic-module-federation-with-angular/  
+https://dev.to/mayur_kulkarni_126/step-by-step-guide-to-angular-microfrontends-with-nx-and-dynamic-module-federation-2e04  
+https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4  
+
+## How it works (Dynamic Federation)
+
+The host loads all remotes at **runtime** from a manifest. No remote URLs are baked into the host build.
+
+### 1. Runtime remote definitions (manifest)
+
+| What | Where |
+|------|--------|
+| File | `nx-mf-df/apps/main-host/public/module-federation.manifest.json` |
+| Content | Maps remote names to `remoteEntry.mjs` URLs (single line in repo): `mf_remote_a` → `http://localhost:4201/remoteEntry.mjs`, `mf_remote_b` → `http://localhost:4202/remoteEntry.mjs`, `mf_remote_home` → `http://localhost:4203/remoteEntry.mjs` |
+
+The host does not know these URLs at build time; they are read from this file at runtime.
+
+### 2. Bootstrap: fetch manifest → register remotes → start app
+
+| What | Where |
+|------|--------|
+| File | `nx-mf-df/apps/main-host/src/main.ts` |
+| Flow | Line 3: `fetch('/module-federation.manifest.json')` → Line 4: `res.json()` → `definitions: Record<string, string>` → Lines 5–6: `setRemoteDefinitions(definitions)` from `@nx/angular/mf` → Lines 7–8: `import('./bootstrap')` to start Angular |
+| Import | Line 1: `setRemoteDefinitions` from `@nx/angular/mf` |
+
+Remotes are defined only from the manifest at runtime, not from webpack config.
+
+### 3. Host module federation config – no static remotes
+
+| What | Where |
+|------|--------|
+| File | `nx-mf-df/apps/main-host/module-federation.config.ts` |
+| Relevant | Line 5: `remotes: []` (empty array) |
+
+The host bundle has no static remote URLs; everything is dynamic.
+
+### 4. Host webpack – no remote overrides
+
+| What | Where |
+|------|--------|
+| Files | `nx-mf-df/apps/main-host/webpack.config.ts`, `nx-mf-df/apps/main-host/webpack.prod.config.ts` |
+| Relevant | In both: line 4: `export default withModuleFederation(config, { dts: false });` — no `remotes` override passed to `withModuleFederation` |
+
+No remote URLs are embedded in the build.
+
+### 5. Routes: load remotes at runtime
+
+| What | Where |
+|------|--------|
+| File | `nx-mf-df/apps/main-host/src/app/app.routes.ts` |
+| Import | Line 1: `loadRemoteModule` from `@nx/angular/mf` (no static `import('mf_remote_*/Routes')`) |
+| Helper | Lines 4–20: `getRemoteRoutes(m)` — reads `remoteRoutes` from the loaded module (direct, `default.remoteRoutes`, or via `Object.entries`) |
+| Loader | Lines 22–29: `remoteRoutes(remoteName)` returns a function that calls `loadRemoteModule(remoteName, './Routes')` (line 24), then `getRemoteRoutes(m)` (line 25), with `.catch()` for errors (lines 26–28) |
+| Route entries | Lines 31–48: `appRoutes` — each of `mf_remote_home`, `mf_remote_a`, `mf_remote_b` uses `loadChildren: remoteRoutes('...')` (lines 34, 38, 42); default redirect at lines 45–48 |
+
+All remote route loading goes through the dynamic API and manifest-defined URLs.
+
+### 6. Serve configuration
+
+| What | Where |
+|------|--------|
+| File | `nx-mf-df/apps/main-host/project.json` |
+| Target | `targets.serve` (executor: `@nx/angular:module-federation-dev-server`) |
+| Options | `devRemotes`: `["mf_remote_a", "mf_remote_b", "mf_remote_home"]` — Nx starts these when you run the host; `pathToManifestFile`: `"apps/main-host/public/module-federation.manifest.json"` |
+
+In dev, remotes are started and the same manifest is used.
+
+### 7. Remotes
+
+| What | Where |
+|------|--------|
+| Apps | `nx-mf-df/apps/mf_remote_a`, `nx-mf-df/apps/mf_remote_b`, `nx-mf-df/apps/mf_remote_home` |
+| Expose | Each `module-federation.config.ts`: e.g. `mf_remote_a` lines 5–7 — `exposes: { './Routes': 'apps/mf_remote_a/src/app/remote-entry/entry.routes.ts' }` |
+| Routes export | Each `src/app/remote-entry/entry.routes.ts`: e.g. `mf_remote_a` line 4 — `export const remoteRoutes: Route[] = [{ path: '', component: RemoteA }];` |
+| Serve | Each `project.json` serve target: `@nx/web:file-server`, ports 4201, 4202, 4203, matching the manifest |
+
+For more detail on the migration from static to dynamic federation, see `nx-mf-df/MS_TO_DF.md`.
 
 ## This project is under construction!
 
@@ -13,7 +87,7 @@ https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4
 - fix all warnings!
 - fix lint errors!
 - implement tests
-- convert module federation to dynamic federation
+- ~~convert module federation to dynamic federation~~ (done)
 - install sass and tailwind, therefore optimize css
 - restyle all
 - implement global error handling
@@ -32,7 +106,7 @@ https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4
 8. npx nx g @nx/angular:library --name=common-ui-lib --directory=libs/common-ui-lib --standalone --buildable --publishable=false
 9. npx nx g @nx/angular:component libs/common-ui-lib/src/lib/nx-version/angular-version.ts --standalone --export --no-interactive
 10. npx nx g @nx/angular:component libs/common-ui-lib/src/lib/nx-version/nx-version.ts --standalone --export --no-interactive
-
+11. replace module federation with dynamic federation based on the abowe URLx
 
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>

@@ -4,12 +4,15 @@
   "sourceRoot": "libs/common-ui-lib/src",
   "prefix": "lib",
   "projectType": "library",
-  "tags": ["type:lib"],
+  "tags": [
+    "type:lib"
+  ],
   "targets": {
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
-      "dependsOn": ["update-nx-version"],
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
       "options": {
         "project": "libs/common-ui-lib/ng-package.json",
         "tsConfig": "libs/common-ui-lib/tsconfig.lib.json"

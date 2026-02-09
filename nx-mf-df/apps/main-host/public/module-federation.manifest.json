@@ -1,0 +1,5 @@
+{
+  "mf_remote_a": "http://localhost:4201/remoteEntry.mjs",
+  "mf_remote_b": "http://localhost:4202/remoteEntry.mjs",
+  "mf_remote_home": "http://localhost:4203/remoteEntry.mjs"
+}
