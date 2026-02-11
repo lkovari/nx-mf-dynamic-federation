@@ -7,8 +7,8 @@
 .remote-a-hero {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  color: white;
+  background-color: #c5e8f0;
+  color: #2d3748;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
   word-wrap: break-word;
@@ -19,6 +19,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 1rem 0;
+  color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -26,7 +27,7 @@
 .remote-a-subtitle {
   font-size: 1.25rem;
   margin: 0;
-  opacity: 0.95;
+  color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -88,26 +89,19 @@
 }
 
 .remote-a-card {
-  background: white;
-  border: 1px solid #e9ecef;
+  background: #c5e8f0;
+  border: 1px solid #a8dce8;
   border-radius: 0.5rem;
   padding: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.remote-a-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
-  color: #212529;
+  color: #2d3748;
 }
 
 @media (max-width: 768px) {
@@ -138,7 +132,7 @@
 
 .capability-list li {
   padding: 0.5rem 0;
-  color: #495057;
+  color: #2d3748;
 }
 
 .remote-a-stats {
@@ -149,8 +143,8 @@
 }
 
 .stat-item {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  color: white;
+  background-color: #c5e8f0;
+  color: #2d3748;
   padding: 2rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -166,7 +160,7 @@
 
 .stat-label {
   font-size: 0.875rem;
-  opacity: 0.9;
+  color: #2d3748;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }

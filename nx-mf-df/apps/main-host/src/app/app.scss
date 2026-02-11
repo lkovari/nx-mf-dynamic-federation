@@ -7,22 +7,24 @@
     'main'
     'footer';
   height: 100vh;
-  overflow: hidden;
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
-app-header {
+nx-mf-df-header {
   grid-area: header;
   flex-shrink: 0;
 }
 
-app-main {
+nx-mf-df-main {
   grid-area: main;
   min-height: 0;
   overflow: hidden;
+  display: block;
 }
 
-app-footer {
+nx-mf-df-footer {
   grid-area: footer;
   flex-shrink: 0;
 }

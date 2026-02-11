@@ -7,8 +7,8 @@
 .remote-b-hero {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-  color: white;
+  background-color: #e8dcf5;
+  color: #2d3748;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
   word-wrap: break-word;
@@ -19,6 +19,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 1rem 0;
+  color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -26,7 +27,7 @@
 .remote-b-subtitle {
   font-size: 1.25rem;
   margin: 0;
-  opacity: 0.95;
+  color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -88,26 +89,19 @@
 }
 
 .remote-b-card {
-  background: white;
-  border: 1px solid #e9ecef;
+  background: #e8dcf5;
+  border: 1px solid #d8c8e8;
   border-radius: 0.5rem;
   padding: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.remote-b-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
-  color: #212529;
+  color: #2d3748;
 }
 
 @media (max-width: 768px) {
@@ -138,7 +132,7 @@
 
 .benefit-list li {
   padding: 0.5rem 0;
-  color: #495057;
+  color: #2d3748;
 }
 
 .remote-b-features {
@@ -149,18 +143,13 @@
 }
 
 .feature-box {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-  color: white;
+  background-color: #e8dcf5;
+  color: #2d3748;
   padding: 2rem;
   border-radius: 0.5rem;
   text-align: center;
-  transition: transform 0.2s;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.feature-box:hover {
-  transform: scale(1.05);
 }
 
 .feature-icon {
@@ -177,7 +166,7 @@
 .feature-description {
   font-size: 0.875rem;
   margin: 0;
-  opacity: 0.95;
+  color: #2d3748;
 }
 
 @media (max-width: 768px) {

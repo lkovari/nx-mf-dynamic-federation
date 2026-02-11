@@ -100,6 +100,8 @@ For more detail on the migration from static to dynamic federation, see `nx-mf-d
 - implement global wait spinner
 - implement to put into HTTP header the corelation id for future use.
 - optimize nx usage
+- create correct separated structure below styles I mean _variables.scss, _colors.scss etc.
+- get rid of the all nx-welcome.ts it not in use
 
 ## Create workspace:
 1. pnpx create-nx-workspace@latest nx-mf-df --preset=apps

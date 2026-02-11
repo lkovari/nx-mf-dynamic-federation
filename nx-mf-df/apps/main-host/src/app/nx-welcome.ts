@@ -86,14 +86,11 @@ import { CommonModule } from '@angular/common';
         padding: 0.5rem 0.75rem;
       }
       .shadow {
-        box-shadow:
-          0 0 #0000,
-          0 0 #0000,
-          0 10px 15px -3px rgba(0, 0, 0, 0.1),
-          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        box-shadow: none;
       }
       .rounded {
         border-radius: 1.5rem;
+        background-color: #b8d4e8;
       }
       .wrapper {
         width: 100%;
@@ -126,16 +123,16 @@ import { CommonModule } from '@angular/common';
       }
       #hero {
         align-items: center;
-        background-color: hsla(214, 62%, 21%, 1);
+        background-color: #b8d4e8;
         border: none;
         box-sizing: border-box;
-        color: rgba(55, 65, 81, 1);
+        color: #2d3748;
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 3.5rem;
       }
       #hero .text-container {
-        color: rgba(255, 255, 255, 1);
+        color: #2d3748;
         padding: 3rem 2rem;
       }
       #hero .text-container h2 {
@@ -144,7 +141,7 @@ import { CommonModule } from '@angular/common';
         position: relative;
       }
       #hero .text-container h2 svg {
-        color: hsla(162, 47%, 50%, 1);
+        color: #2d3748;
         height: 2rem;
         left: -0.25rem;
         position: absolute;
@@ -155,9 +152,9 @@ import { CommonModule } from '@angular/common';
         margin-left: 2.5rem;
       }
       #hero .text-container a {
-        background-color: rgba(255, 255, 255, 1);
+        background-color: #2d3748;
         border-radius: 0.75rem;
-        color: rgba(55, 65, 81, 1);
+        color: #e2e8f0;
         display: inline-block;
         margin-top: 1.5rem;
         padding: 1rem 2rem;
@@ -170,7 +167,7 @@ import { CommonModule } from '@angular/common';
         padding-right: 2rem;
       }
       #hero .logo-container svg {
-        color: rgba(255, 255, 255, 1);
+        color: #2d3748;
         width: 66.666667%;
       }
       #middle-content {
@@ -194,6 +191,7 @@ import { CommonModule } from '@angular/common';
         line-height: 1.75rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        color: #2d3748;
       }
       .list-item-link {
         align-items: center;
@@ -254,7 +252,7 @@ import { CommonModule } from '@angular/common';
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       .list-item-link > span > span {
-        color: rgba(107, 114, 128, 1);
+        color: #2d3748;
         display: block;
         flex-grow: 1;
         font-size: 0.75rem;
@@ -282,34 +280,19 @@ import { CommonModule } from '@angular/common';
         width: 1rem;
       }
       .list-item-link:hover {
-        color: rgba(255, 255, 255, 1);
-        background-color: hsla(162, 55%, 33%, 1);
+        color: #2d3748;
+        background-color: #9bc4e2;
       }
 
       .list-item-link:hover > span > span {
-        color: rgba(243, 244, 246, 1);
-      }
-      .list-item-link:hover svg:last-child {
-        transform: translateX(0.25rem);
+        color: #2d3748;
       }
 
       .button-pill {
         padding: 1.5rem 2rem;
         margin-bottom: 2rem;
-        transition-duration: 300ms;
-        transition-property:
-          background-color,
-          border-color,
-          color,
-          fill,
-          stroke,
-          opacity,
-          box-shadow,
-          transform,
-          filter,
-          backdrop-filter,
-          -webkit-backdrop-filter;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: #b8d4e8;
+        color: #2d3748;
         align-items: center;
         display: flex;
       }
@@ -347,7 +330,7 @@ import { CommonModule } from '@angular/common';
       }
       .button-pill:hover svg,
       .button-pill:hover {
-        color: rgba(255, 255, 255, 1) !important;
+        color: #e2e8f0 !important;
       }
       .nx-console:hover {
         background-color: rgba(0, 122, 204, 1);
@@ -381,6 +364,7 @@ import { CommonModule } from '@angular/common';
         line-height: 1.75rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        color: #2d3748;
       }
       #commands p {
         font-size: 1rem;
@@ -389,6 +373,7 @@ import { CommonModule } from '@angular/common';
         margin-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        color: #2d3748;
       }
       details {
         align-items: center;
