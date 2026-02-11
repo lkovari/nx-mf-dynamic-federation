@@ -7,6 +7,12 @@ https://www.angulararchitects.io/en/blog/dynamic-module-federation-with-angular/
 https://dev.to/mayur_kulkarni_126/step-by-step-guide-to-angular-microfrontends-with-nx-and-dynamic-module-federation-2e04  
 https://www.youtube.com/watch?app=desktop&v=TLiL6EpeWJ4  
 
+## Architectural Best Practices References
+https://onehorizon.ai/blog/angular-best-practices-2026-the-architects-playbook
+https://wirefuture.com/post/angular-best-practices-building-scalable-applications-in-2026
+https://nx.dev/blog/architecting-angular-applications
+https://dev-academy.com/angular-architecture-best-practices/
+
 ## How it works (Dynamic Federation)
 
 The host loads all remotes at **runtime** from a manifest. No remote URLs are baked into the host build.
