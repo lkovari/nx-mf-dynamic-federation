@@ -152,14 +152,6 @@
 
 .tech-stack lib-angular-version {
   display: inline-block;
-  
-  .angular-version {
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    background: none;
-    text-align: left;
-  }
 
   .version-number::before {
     content: 'Angular ';
@@ -179,14 +171,6 @@
 
 .tech-stack lib-nx-version {
   display: inline-block;
-  
-  .nx-version {
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    background: none;
-    text-align: left;
-  }
 
   .version-number::before {
     content: 'Nx ';
