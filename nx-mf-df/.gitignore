@@ -51,3 +51,4 @@ cache/workspace-data
 
 vitest.config.*.timestamp*
 __screenshots__/
+.vercel
