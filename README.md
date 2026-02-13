@@ -92,16 +92,17 @@ For more detail on the migration from static to dynamic federation, see `nx-mf-d
 ### Known bugs and TODOs:
 - fix all warnings!
 - fix lint errors!
-- implement tests
+- implement tests (Vitest installed)
 - ~~convert module federation to dynamic federation~~ (done)
-- install sass and tailwind, therefore optimize css
+- install Tailwind maybe install Sass too.
 - restyle all
 - implement global error handling
 - implement global wait spinner
-- implement to put into HTTP header the corelation id for future use.
+- implement to put into HTTP header the corelation id for future use.- install Angular Material UI component libs
 - optimize nx usage
 - create correct separated structure below styles I mean _variables.scss, _colors.scss etc.
 - get rid of the all nx-welcome.ts it not in use
+- create vertical sliced DDD style folder structure
 
 ## Create workspace:
 1. pnpx create-nx-workspace@latest nx-mf-df --preset=apps
@@ -117,15 +118,7 @@ For more detail on the migration from static to dynamic federation, see `nx-mf-d
 11. replace module federation with dynamic federation based on the abowe URLx
 
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
-
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
-
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/intro#learn-nx?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
-
-## Finish your remote caching setup
-
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/z1u9lnAAlZ)
+[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/intro#learn-nx?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. 
 
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
@@ -287,19 +280,19 @@ pnpm nx lint common-ui-lib
 
 While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
 
-To install a new plugin you can use the `nx add` command. Here's an example of adding the React plugin:
+To install a new plugin you can use the `nx add` command. Here's an example of adding the Angular plugin:
 ```sh
-npx nx add @nx/react
+npx nx add @nx/angular
 ```
 
-Use the plugin's generator to create new projects. For example, to create a new React app or library:
+Use the plugin's generator to create new projects. For example, to create a new Angular app or library:
 
 ```sh
-# Generate an app
-npx nx g @nx/react:app demo
+# Generate an application
+npx nx g @nx/angular:application demo
 
 # Generate a library
-npx nx g @nx/react:lib some-lib
+npx nx g @nx/angular:library some-lib --directory=libs/some-lib --standalone --buildable --publishable=false
 ```
 
 You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
@@ -329,3 +322,49 @@ And join the Nx community:
 - [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
 - [Our Youtube channel](https://www.youtube.com/@nxdevtools)
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+## How Dynamic Module Federation works
+
+# Static Module Federation
+Remote list is fixed in the host’s build config (e.g. in webpack / module-federation.config.ts).
+Remotes are declared at build time; the host bundle “knows” remote names and often their URLs.
+To add/change a remote or its URL, you typically change config and rebuild the host.
+# Dynamic Module Federation
+The host does not declare remotes in its build config.
+The host gets the remote list at runtime (e.g. from a manifest or API).
+The same host build can load different remotes in different environments (dev, staging, prod) by changing only the manifest/API—no host rebuild.
+So “dynamic” = remotes are resolved at runtime, not baked in at build time.
+How it works (step by step)
+# 1. Build time: host is “remote-agnostic”
+The host’s webpack/module-federation config has no remotes (or only an empty list).
+The host does not bundle or hardcode remote URLs.
+The host only contains the mechanism: “fetch a mapping, register it, then load remotes by name.”
+So the host build is independent of which remotes exist and where they are.
+# 2. Runtime: bootstrap loads the mapping
+In main.ts you have something like:
+fetch('/module-federation.manifest.json')
+  .then((res) => res.json())
+  .then((definitions: Record<string, string>) => setRemoteDefinitions(definitions))
+  .then(() => import('./bootstrap'))
+  .catch((err) => console.error(err));
+fetch('/module-federation.manifest.json')  .then((res) => res.json())  .then((definitions: Record<string, string>) => setRemoteDefinitions(definitions))  .then(() => import('./bootstrap'))  .catch((err) => console.error(err));
+What this does:
+Fetch the manifest (e.g. from /module-federation.manifest.json or an API).
+Register the mapping with Module Federation via setRemoteDefinitions(definitions) (e.g. mf_remote_a → http://.../remoteEntry.mjs).
+Then bootstrap the Angular app.
+So the first thing that runs is “get the remote list and tell the runtime where each remote lives.” That’s the “dynamic” part: the mapping is decided when the app runs, not when it’s built.
+3. Runtime: routes load remotes by name
+In app.routes.ts:
+loadRemoteModule(remoteName, './Routes')
+loadRemoteModule(remoteName, './Routes')
+The host only uses remote name (mf_remote_a, mf_remote_b, etc.) and exposed module (./Routes). It does not use URLs here—Module Federation resolves the URL from the definitions. So:
+When the user navigates to a route that uses a remote, the router calls loadRemoteModule(remoteName, './Routes').
+Module Federation looks up remoteName in the definitions it got at startup, fetches the remote entry from that URL, and then loads ./Routes.
+So “dynamic” again: which URL is used for each remote is determined at runtime from the manifest, not from the host’s build.
+Why it’s called “dynamic”
+Aspect	What’s dynamic
+When remotes are known	At runtime (when the app starts), not at build time.
+Where the list comes from	A runtime resource (manifest file or API), not the host’s webpack config.
+Same build, different environments	The same host build can load different remotes (or different URLs) in dev vs staging vs prod by changing only the manifest/API.
+Adding/removing remotes	Change the manifest (or API response); no host rebuild.
+So “Dynamic Module Federation” = remote discovery and URL resolution happen at runtime (via manifest/API + setRemoteDefinitions + loadRemoteModule), instead of being fixed in the host’s build configuration. That’s the core of how it works and why it’s dynamic.
