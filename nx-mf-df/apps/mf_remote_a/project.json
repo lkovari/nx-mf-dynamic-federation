@@ -58,14 +58,12 @@
     },
     "serve": {
       "continuous": true,
-      "executor": "@nx/web:file-server",
+      "executor": "@nx/angular:dev-server",
       "options": {
         "buildTarget": "mf_remote_a:build:development",
         "port": 4201,
         "host": "0.0.0.0",
-        "watch": false,
-        "spa": false,
-        "cors": true
+        "publicHost": "http://localhost:4201"
       },
       "configurations": {
         "production": {

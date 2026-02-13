@@ -15,15 +15,40 @@
 }
 
 .header-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex: 0 1 auto;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.header-title > h2,
+.header-title > h3 {
   margin: 0;
-  font-size: 1.5rem;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  flex: 0 1 auto;
+  color: #22d3ee;
+  font-size: 1.25rem;
+  min-width: 0;
 }
 
+.header-sub {
+  color: magenta;
+  font-size: 0.75rem;
+  align-self: flex-end;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.header-sup {
+  color: aquamarine;
+  font-size: 0.75rem;
+  align-self: flex-start;
+}
 .header-nav {
   display: flex;
   gap: 1.5rem;
@@ -60,8 +85,20 @@
   }
 
   .header-title {
-    font-size: 1.125rem;
-    text-align: center;
+    justify-content: center;
+  }
+
+  .header-title > h2,
+  .header-title > h3 {
+    font-size: 1rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .header-sup,
+  .header-sub {
+    font-size: 0.65rem;
   }
 
   .header-nav {
@@ -80,8 +117,14 @@
     padding: 0.5rem 0.75rem;
   }
 
-  .header-title {
-    font-size: 1rem;
+  .header-title > h2,
+  .header-title > h3 {
+    font-size: 0.875rem;
+  }
+
+  .header-sup,
+  .header-sub {
+    font-size: 0.6rem;
   }
 
   .header-nav {
