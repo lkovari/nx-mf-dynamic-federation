@@ -14,14 +14,14 @@
         "index": "apps/main-host/src/index.html",
         "main": "apps/main-host/src/main.ts",
         "tsConfig": "apps/main-host/tsconfig.app.json",
-        "inlineStyleLanguage": "scss",
+        "inlineStyleLanguage": "css",
         "assets": [
           {
             "glob": "**/*",
             "input": "apps/main-host/public"
           }
         ],
-        "styles": ["apps/main-host/src/styles.scss"],
+        "styles": ["apps/main-host/src/styles.css"],
         "customWebpackConfig": {
           "path": "apps/main-host/webpack.config.ts"
         }

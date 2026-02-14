@@ -7,7 +7,7 @@ import { Main } from './shared/components/main/main';
   selector: 'nx-mf-df-root',
   imports: [Header, Footer, Main],
   templateUrl: './app.html',
-  styleUrl: './app.scss',
+  styleUrl: './app.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {}

@@ -5,7 +5,7 @@ import { AngularVersion, NxVersion } from '@nx-mf-df/common-ui-lib';
   selector: 'nx-mf-df-footer',
   imports: [NxVersion, AngularVersion],
   templateUrl: './footer.html',
-  styleUrl: './footer.scss',
+  styleUrl: './footer.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Footer {

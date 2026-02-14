@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
   selector: 'nx-mf-df-header',
   imports: [RouterModule],
   templateUrl: './header.html',
-  styleUrl: './header.scss',
+  styleUrl: './header.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Header {}

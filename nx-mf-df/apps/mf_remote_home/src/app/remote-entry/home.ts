@@ -5,7 +5,7 @@ import { AngularVersion, NxVersion } from '@nx-mf-df/common-ui-lib';
   selector: 'nx-mf-df-home',
   imports: [AngularVersion, NxVersion],
   templateUrl: './home.html',
-  styleUrl: './home.scss',
+  styleUrl: './home.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home {

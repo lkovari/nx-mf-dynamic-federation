@@ -100,7 +100,7 @@ For more detail on the migration from static to dynamic federation, see `nx-mf-d
 - implement global wait spinner
 - implement to put into HTTP header the corelation id for future use.- install Angular Material UI component libs
 - optimize nx usage
-- create correct separated structure below styles I mean _variables.scss, _colors.scss etc.
+- create correct separated structure below styles I mean _variables.css, _colors.css etc.
 - get rid of the all nx-welcome.ts it not in use
 - create vertical sliced DDD style folder structure
 

@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
   selector: 'nx-mf-df-main',
   imports: [RouterModule],
   templateUrl: './main.html',
-  styleUrl: './main.scss',
+  styleUrl: './main.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Main {}

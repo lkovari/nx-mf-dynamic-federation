@@ -14,14 +14,14 @@
         "index": "apps/mf_remote_home/src/index.html",
         "main": "apps/mf_remote_home/src/main.ts",
         "tsConfig": "apps/mf_remote_home/tsconfig.app.json",
-        "inlineStyleLanguage": "scss",
+        "inlineStyleLanguage": "css",
         "assets": [
           {
             "glob": "**/*",
             "input": "apps/mf_remote_home/public"
           }
         ],
-        "styles": ["apps/mf_remote_home/src/styles.scss"],
+        "styles": ["apps/mf_remote_home/src/styles.css"],
         "customWebpackConfig": {
           "path": "apps/mf_remote_home/webpack.config.ts"
         }

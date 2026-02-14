@@ -152,38 +152,38 @@
 
 .tech-stack lib-angular-version {
   display: inline-block;
+}
 
-  .version-number::before {
-    content: 'Angular ';
-  }
+.tech-stack lib-angular-version .version-number::before {
+  content: 'Angular ';
+}
 
-  .version-number {
-    background: none;
-    color: magenta;
-    padding: 0;
-    border-radius: 0;
-    font-size: 0.875rem;
-    font-weight: normal;
-    margin: 0;
-    display: inline-block;
-  }
+.tech-stack lib-angular-version .version-number {
+  background: none;
+  color: magenta;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin: 0;
+  display: inline-block;
 }
 
 .tech-stack lib-nx-version {
   display: inline-block;
+}
 
-  .version-number::before {
-    content: 'Nx ';
-  }
+.tech-stack lib-nx-version .version-number::before {
+  content: 'Nx ';
+}
 
-  .version-number {
-    background: none;
-    color: magenta;
-    padding: 0;
-    border-radius: 0;
-    font-size: 0.875rem;
-    font-weight: normal;
-    margin: 0;
-    display: inline-block;
-  }
+.tech-stack lib-nx-version .version-number {
+  background: none;
+  color: magenta;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin: 0;
+  display: inline-block;
 }

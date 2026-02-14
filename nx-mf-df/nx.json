@@ -93,7 +93,7 @@
     "@nx/angular:application": {
       "e2eTestRunner": "playwright",
       "linter": "eslint",
-      "style": "scss",
+      "style": "css",
       "unitTestRunner": "vitest-analog"
     },
     "@nx/angular:library": {

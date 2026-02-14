@@ -7,7 +7,7 @@ import { NgStyle } from '@angular/common';
   imports: [NgStyle],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './nx-version.html',
-  styleUrl: './nx-version.scss',
+  styleUrl: './nx-version.css',
 })
 export class NxVersion {
   protected readonly nxVersion = signal(NX_VERSION);

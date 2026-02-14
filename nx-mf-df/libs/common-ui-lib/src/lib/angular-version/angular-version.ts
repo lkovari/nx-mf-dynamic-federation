@@ -7,7 +7,7 @@ import { NgStyle } from '@angular/common';
   imports: [NgStyle],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './angular-version.html',
-  styleUrl: './angular-version.scss',
+  styleUrl: './angular-version.css',
 })
 export class AngularVersion {
   protected readonly angularVersion = signal(VERSION.full);
