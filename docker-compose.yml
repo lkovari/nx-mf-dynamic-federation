@@ -8,8 +8,6 @@ services:
       - "4200:4200"
     volumes:
       - ./nx-mf-df:/workspace
-      - /workspace/node_modules
-      - /workspace/.nx
     environment:
       - NODE_ENV=development
       - HOST=0.0.0.0
@@ -40,8 +38,6 @@ services:
       - "4201:4201"
     volumes:
       - ./nx-mf-df:/workspace
-      - /workspace/node_modules
-      - /workspace/.nx
     environment:
       - NODE_ENV=development
       - HOST=0.0.0.0
@@ -65,8 +61,6 @@ services:
       - "4202:4202"
     volumes:
       - ./nx-mf-df:/workspace
-      - /workspace/node_modules
-      - /workspace/.nx
     environment:
       - NODE_ENV=development
       - HOST=0.0.0.0
@@ -90,8 +84,6 @@ services:
       - "4203:4203"
     volumes:
       - ./nx-mf-df:/workspace
-      - /workspace/node_modules
-      - /workspace/.nx
     environment:
       - NODE_ENV=development
       - HOST=0.0.0.0
