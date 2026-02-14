@@ -1,1 +1,41 @@
 .pnpm-store
+# Node / pnpm
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+.npmrc
+
+# Nx cache
+.nx/
+tmp/
+dist/
+out/
+
+# Angular
+.angular/
+.cache/
+
+# Build outputs
+build/
+coverage/
+
+# Environment files
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Parcel / Watcher
+.parcel-cache/
+
+# Misc
+*.swp
