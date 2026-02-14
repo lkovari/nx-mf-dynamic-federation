@@ -14,6 +14,13 @@ services:
       - NODE_ENV=development
       - HOST=0.0.0.0
     command: pnpm nx serve main-host
+    depends_on:
+      mf-remote-a:
+        condition: service_healthy
+      mf-remote-b:
+        condition: service_healthy
+      mf-remote-home:
+        condition: service_healthy
     networks:
       - nx-mf-network
     restart: unless-stopped
@@ -21,8 +28,8 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:4200"]
       interval: 10s
       timeout: 5s
-      retries: 5
-      start_period: 30s
+      retries: 10
+      start_period: 120s
 
   mf-remote-a:
     build:
@@ -39,9 +46,6 @@ services:
       - NODE_ENV=development
       - HOST=0.0.0.0
     command: pnpm nx serve mf_remote_a
-    depends_on:
-      main-host:
-        condition: service_healthy
     networks:
       - nx-mf-network
     restart: unless-stopped
@@ -49,8 +53,8 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:4201"]
       interval: 10s
       timeout: 5s
-      retries: 5
-      start_period: 30s
+      retries: 10
+      start_period: 120s
 
   mf-remote-b:
     build:
@@ -67,9 +71,6 @@ services:
       - NODE_ENV=development
       - HOST=0.0.0.0
     command: pnpm nx serve mf_remote_b
-    depends_on:
-      main-host:
-        condition: service_healthy
     networks:
       - nx-mf-network
     restart: unless-stopped
@@ -77,8 +78,8 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:4202"]
       interval: 10s
       timeout: 5s
-      retries: 5
-      start_period: 30s
+      retries: 10
+      start_period: 120s
 
   mf-remote-home:
     build:
@@ -95,9 +96,6 @@ services:
       - NODE_ENV=development
       - HOST=0.0.0.0
     command: pnpm nx serve mf_remote_home
-    depends_on:
-      main-host:
-        condition: service_healthy
     networks:
       - nx-mf-network
     restart: unless-stopped
@@ -105,8 +103,8 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:4203"]
       interval: 10s
       timeout: 5s
-      retries: 5
-      start_period: 30s
+      retries: 10
+      start_period: 120s
 
 networks:
   nx-mf-network:
