@@ -1,6 +1,6 @@
 import { setRemoteDefinitions } from '@nx/angular/mf';
 
-fetch('/module-federation.manifest.json')
+fetch('module-federation.manifest.json')
   .then((res) => res.json())
   .then((definitions: Record<string, string>) =>
     setRemoteDefinitions(definitions)

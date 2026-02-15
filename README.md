@@ -241,6 +241,14 @@ The project can be run fully in Docker: the host and all remotes are started as 
 
 The main host depends on the three remotes being healthy, so remotes start first; once they pass their health checks, the host is started.
 
+## Deploy to GitHub Pages (gh-pages)
+
+```sh
+pnpm install
+pnpm run ghBuildProd:all
+pnpm run ghDeploy:all
+```
+
 ## Scripts
 
 All scripts are defined in `nx-mf-df/package.json` and should be run from the `nx-mf-df` directory (e.g. `pnpm <script>` or `npm run <script>`).

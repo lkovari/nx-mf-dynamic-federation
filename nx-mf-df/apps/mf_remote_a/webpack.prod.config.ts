@@ -1,24 +1,16 @@
 import { withModuleFederation } from '@nx/module-federation/angular';
 import config from './module-federation.config';
 
-/**
- * DTS Plugin is disabled in Nx Workspaces as Nx already provides Typing support for Module Federation
- * The DTS Plugin can be enabled by setting dts: true
- * Learn more about the DTS Plugin here: https://module-federation.io/configure/dts.html
- */
-export default withModuleFederation(
-  {
-    ...config,
-    /*
-     * Remote overrides for production.
-     * Each entry is a pair of a unique name and the URL where it is deployed.
-     *
-     * e.g.
-     * remotes: [
-     *   ['app1', 'https://app1.example.com'],
-     *   ['app2', 'https://app2.example.com'],
-     * ]
-     */
-  },
-  { dts: false },
-);
+const GH_PAGES_REMOTE_BASE = '/nx-mf-dynamic-federation/mf_remote_a/';
+
+export default async (baseConfig: unknown) => {
+  const withMF = await withModuleFederation({ ...config }, { dts: false });
+  const configWithMF = withMF(baseConfig as Record<string, unknown>);
+  return {
+    ...configWithMF,
+    output: {
+      ...(configWithMF as { output?: Record<string, unknown> }).output,
+      publicPath: GH_PAGES_REMOTE_BASE,
+    },
+  };
+};

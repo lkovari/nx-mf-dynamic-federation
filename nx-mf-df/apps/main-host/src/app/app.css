@@ -19,9 +19,17 @@ nx-mf-df-main {
   grid-area: main;
   min-height: 0;
   display: block;
+  overflow: hidden;
 }
 
 nx-mf-df-footer {
   grid-area: footer;
   flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    height: 100dvh;
+    overflow: hidden;
+  }
 }
