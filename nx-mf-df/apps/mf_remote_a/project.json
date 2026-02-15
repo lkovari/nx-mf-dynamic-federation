@@ -28,6 +28,8 @@
       },
       "configurations": {
         "production": {
+          "baseHref": "/nx-mf-dynamic-federation/mf_remote_a/",
+          "deployUrl": "/nx-mf-dynamic-federation/mf_remote_a/",
           "budgets": [
             {
               "type": "initial",
