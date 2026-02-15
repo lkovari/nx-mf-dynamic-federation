@@ -72,7 +72,7 @@ All remote route loading goes through the dynamic API and manifest-defined URLs.
 |------|--------|
 | File | `nx-mf-df/apps/main-host/project.json` |
 | Target | `targets.serve` (executor: `@nx/angular:module-federation-dev-server`) |
-| Options | `devRemotes`: `["mf_remote_a", "mf_remote_b", "mf_remote_home"]` — Nx starts these when you run the host; `pathToManifestFile`: `"apps/main-host/public/module-federation.manifest.json"` |
+| Options | `devRemotes`: `["mf_remote_a", "mf_remote_b", "mf_remote_home"]` — Nx starts these when  run the host; `pathToManifestFile`: `"apps/main-host/public/module-federation.manifest.json"` |
 
 In dev, remotes are started and the same manifest is used.
 
@@ -102,7 +102,7 @@ Modern CSS for responsive layouts relies on a few key features. Use them so layo
 | Feature | Purpose | Example |
 |--------|--------|--------|
 | **`clamp(min, preferred, max)`** | Constrains a value between a minimum and maximum; the middle value is the “preferred” size that grows/shrinks with context (e.g. viewport). Ideal for fluid typography, spacing, and widths. | `font-size: clamp(1rem, 2vw + 1rem, 2rem);` — text scales between 1rem and 2rem based on viewport. |
-| **`@container`** | Container queries let you style based on the **container’s** size, not the viewport. Components can adapt when their wrapper is narrow or wide, so the same component works in sidebars, main content, or full width. | `@container (min-width: 400px) { .card { grid-template-columns: 1fr 1fr; } }` — card switches to two columns when its container is wide enough. |
+| **`@container`** | Container queries let  style based on the **container’s** size, not the viewport. Components can adapt when their wrapper is narrow or wide, so the same component works in sidebars, main content, or full width. | `@container (min-width: 400px) { .card { grid-template-columns: 1fr 1fr; } }` — card switches to two columns when its container is wide enough. |
 | **`minmax(min, max)`** | In Grid, defines a track that is at least `min` and at most `max`. Makes columns/rows flexible: they don’t collapse below `min` and don’t grow beyond `max`. | `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));` — as many columns as fit, each between 200px and 1fr. |
 | **`repeat()`** | Defines repeated grid tracks. Use a number (`repeat(3, 1fr)`) or auto patterns (`repeat(auto-fill, minmax(150px, 1fr))`) to avoid writing the same track many times and to get responsive grids. | `repeat(auto-fill, minmax(12rem, 1fr))` — auto-fill creates as many columns as fit with a minimum of 12rem. |
 
@@ -234,7 +234,7 @@ The project can be run fully in Docker: the host and all remotes are started as 
 | `docker-compose up --build` | Build images (if needed) and start all services (main-host on 4200, remotes on 4201, 4202, 4203). Use `--build` to force a rebuild after code or Dockerfile changes. |
 | `docker-compose up -d --build` | Same as above but run in the background (detached). |
 | `docker-compose down` | Stop and remove the containers. Leaves images and volumes. |
-| `docker-compose down -v` | Stop and remove the containers **and** remove named volumes (`-v`). Use when you want a clean state (e.g. to clear volume-backed data). |
+| `docker-compose down -v` | Stop and remove the containers **and** remove named volumes (`-v`). Use when  want a clean state (e.g. to clear volume-backed data). |
 | `docker-compose ps` | List running services and their status. |
 | `docker-compose logs -f` | Stream logs from all services. Add a service name (e.g. `main-host`) to follow only that service. |
 | `docker-compose restart <service>` | Restart a single service (e.g. `main-host`, `mf-remote-a`). |
@@ -336,7 +336,7 @@ pnpm lint:all
 
 ### Individual Project Linting
 
-You can also lint individual projects directly:
+ can also lint individual projects directly:
 
 ```sh
 # Lint main host
@@ -357,9 +357,9 @@ pnpm nx lint common-ui-lib
 
 ## Add new projects
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+While  could add new projects to workspace manually, might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
 
-To install a new plugin you can use the `nx add` command. Here's an example of adding the Angular plugin:
+To install a new plugin  can use the `nx add` command. Here's an example of adding the Angular plugin:
 ```sh
 npx nx add @nx/angular
 ```
@@ -374,7 +374,7 @@ npx nx g @nx/angular:application demo
 npx nx g @nx/angular:library some-lib --directory=libs/some-lib --standalone --buildable --publishable=false
 ```
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+Can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in the IDE.
 
 [Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
@@ -383,7 +383,7 @@ You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx 
 
 ## Install Nx Console
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+Nx Console is an editor extension that enriches the developer experience. It lets run tasks, generate code, and improves code autocompletion in the IDE. It is available for VSCode and IntelliJ.
 
 [Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
@@ -408,7 +408,7 @@ And join the Nx community:
 # Static Module Federation
 Remote list is fixed in the host’s build config (e.g. in webpack / module-federation.config.ts).
 Remotes are declared at build time; the host bundle “knows” remote names and often their URLs.
-To add/change a remote or its URL, you typically change config and rebuild the host.
+To add/change a remote or its URL,  typically change config and rebuild the host.
 # Dynamic Module Federation
 The host does not declare remotes in its build config.
 The host gets the remote list at runtime (e.g. from a manifest or API).
@@ -421,7 +421,7 @@ The host does not bundle or hardcode remote URLs.
 The host only contains the mechanism: “fetch a mapping, register it, then load remotes by name.”
 So the host build is independent of which remotes exist and where they are.
 # 2. Runtime: bootstrap loads the mapping
-In main.ts you have something like:
+In main.ts it have something like:
 fetch('/module-federation.manifest.json')
   .then((res) => res.json())
   .then((definitions: Record<string, string>) => setRemoteDefinitions(definitions))
