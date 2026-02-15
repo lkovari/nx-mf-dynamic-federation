@@ -69,13 +69,12 @@
   color: #2d3748;
 }
 
-.benefit-list {
-  list-style: none;
+.todo-list {
+  list-style: square;
   padding: 0;
   margin: 0;
 }
 
-.benefit-list li {
-  padding: clamp(0.25rem, 1vw, 0.5rem) 0;
+.todo-list li {
   color: #2d3748;
 }

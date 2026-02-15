@@ -9,6 +9,7 @@ node_modules/
 .nx/
 tmp/
 dist/
+dist-gh/
 out/
 
 # Angular
