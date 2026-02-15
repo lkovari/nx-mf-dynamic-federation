@@ -1,127 +1,72 @@
 .remote-b-container {
-  max-width: 1200px;
+  container-type: inline-size;
+  container-name: remote-b;
+  max-inline-size: min(1200px, 100%);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 clamp(0.5rem, 4vw, 1rem);
 }
 
 .remote-b-hero {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem);
   background-color: #e8dcf5;
   color: #2d3748;
   border-radius: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .remote-b-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
-  margin: 0 0 1rem 0;
+  margin: 0 0 clamp(0.75rem, 2vw, 1rem) 0;
   color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-inline-size: 65ch;
+  margin-inline: auto;
 }
 
 .remote-b-subtitle {
-  font-size: 1.25rem;
+  font-size: clamp(0.875rem, 2vw, 1.25rem);
   margin: 0;
   color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-inline-size: 65ch;
+  margin-inline: auto;
 }
 
 .remote-b-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .remote-b-container {
-    padding: 0 0.75rem;
-  }
-
-  .remote-b-hero {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .remote-b-title {
-    font-size: 1.75rem;
-  }
-
-  .remote-b-subtitle {
-    font-size: 1rem;
-  }
-
-  .remote-b-content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .remote-b-container {
-    padding: 0 0.5rem;
-  }
-
-  .remote-b-hero {
-    padding: 1.5rem 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .remote-b-title {
-    font-size: 1.5rem;
-  }
-
-  .remote-b-subtitle {
-    font-size: 0.875rem;
-  }
-
-  .remote-b-content {
-    gap: 0.75rem;
-    margin-top: 1rem;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
 }
 
 .remote-b-card {
+  container-type: inline-size;
+  container-name: card;
   background: #e8dcf5;
   border: 1px solid #d8c8e8;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-.card-title {
-  font-size: 1.5rem;
+.remote-b-card .card-title {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 600;
-  margin: 0 0 1rem 0;
+  margin: 0 0 clamp(0.5rem, 1.5vw, 1rem) 0;
   color: #2d3748;
 }
 
-@media (max-width: 768px) {
-  .remote-b-card {
-    padding: 1.5rem;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .remote-b-card {
-    padding: 1rem;
-  }
-
-  .card-title {
-    font-size: 1.125rem;
-  }
+.remote-b-card p {
+  max-inline-size: 65ch;
+  margin: 0;
+  color: #2d3748;
 }
 
 .benefit-list {
@@ -131,6 +76,6 @@
 }
 
 .benefit-list li {
-  padding: 0.5rem 0;
+  padding: clamp(0.25rem, 1vw, 0.5rem) 0;
   color: #2d3748;
 }

@@ -1,23 +1,48 @@
 .header {
+  container-type: inline-size;
+  container-name: header;
   background-color: #2d3748;
   color: #e2e8f0;
-  padding: 1rem 2rem;
+  padding: clamp(0.5rem, 2vw, 1rem) clamp(0.75rem, 4vw, 2rem);
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-inline-size: min(1400px, 100%);
   margin: 0 auto;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: clamp(0.5rem, 2vw, 1rem);
+}
+
+@container header (max-width: 30rem) {
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+  }
+
+  .header-title {
+    justify-content: center;
+  }
+
+  .header-title > h2,
+  .header-title > h3 {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .header-nav {
+    justify-content: center;
+  }
 }
 
 .header-title {
   display: flex;
   align-items: baseline;
-  gap: 0.5rem;
+  gap: clamp(0.25rem, 1vw, 0.5rem);
   flex: 0 1 auto;
   min-width: 0;
   flex-wrap: wrap;
@@ -31,37 +56,38 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: #22d3ee;
-  font-size: 1.25rem;
+  font-size: clamp(0.875rem, 2.5vw, 1.25rem);
   min-width: 0;
 }
 
 .header-sub {
   color: magenta;
-  font-size: 0.75rem;
+  font-size: clamp(0.6rem, 1.5vw, 0.75rem);
   align-self: flex-end;
-  margin-left: 0.5rem;
+  margin-left: clamp(0.25rem, 1vw, 0.5rem);
   flex-shrink: 0;
   white-space: nowrap;
 }
 
 .header-sup {
   color: aquamarine;
-  font-size: 0.75rem;
+  font-size: clamp(0.6rem, 1.5vw, 0.75rem);
   align-self: flex-start;
 }
+
 .header-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: clamp(0.25rem, 2vw, 1.5rem);
   flex-wrap: wrap;
 }
 
 .header-nav a {
   color: #e2e8f0;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.5rem, 2vw, 1rem);
   border-radius: 0.375rem;
   white-space: nowrap;
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 1.8vw, 0.875rem);
 }
 
 .header-nav a:hover {
@@ -71,68 +97,4 @@
 .header-nav a.active {
   background-color: #4a5568;
   font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 0.75rem 1rem;
-  }
-
-  .header-content {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-  }
-
-  .header-title {
-    justify-content: center;
-  }
-
-  .header-title > h2,
-  .header-title > h3 {
-    font-size: 1rem;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-  }
-
-  .header-sup,
-  .header-sub {
-    font-size: 0.65rem;
-  }
-
-  .header-nav {
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .header-nav a {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.8125rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
-    padding: 0.5rem 0.75rem;
-  }
-
-  .header-title > h2,
-  .header-title > h3 {
-    font-size: 0.875rem;
-  }
-
-  .header-sup,
-  .header-sub {
-    font-size: 0.6rem;
-  }
-
-  .header-nav {
-    gap: 0.25rem;
-  }
-
-  .header-nav a {
-    padding: 0.375rem 0.5rem;
-    font-size: 0.75rem;
-  }
 }

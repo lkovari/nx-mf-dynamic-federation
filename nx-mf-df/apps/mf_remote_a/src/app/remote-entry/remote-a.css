@@ -1,127 +1,72 @@
 .remote-a-container {
-  max-width: 1200px;
+  container-type: inline-size;
+  container-name: remote-a;
+  max-inline-size: min(1200px, 100%);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 clamp(0.5rem, 4vw, 1rem);
 }
 
 .remote-a-hero {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem);
   background-color: #c5e8f0;
   color: #2d3748;
   border-radius: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .remote-a-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
-  margin: 0 0 1rem 0;
+  margin: 0 0 clamp(0.75rem, 2vw, 1rem) 0;
   color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-inline-size: 65ch;
+  margin-inline: auto;
 }
 
 .remote-a-subtitle {
-  font-size: 1.25rem;
+  font-size: clamp(0.875rem, 2vw, 1.25rem);
   margin: 0;
   color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-inline-size: 65ch;
+  margin-inline: auto;
 }
 
 .remote-a-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .remote-a-container {
-    padding: 0 0.75rem;
-  }
-
-  .remote-a-hero {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .remote-a-title {
-    font-size: 1.75rem;
-  }
-
-  .remote-a-subtitle {
-    font-size: 1rem;
-  }
-
-  .remote-a-content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .remote-a-container {
-    padding: 0 0.5rem;
-  }
-
-  .remote-a-hero {
-    padding: 1.5rem 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .remote-a-title {
-    font-size: 1.5rem;
-  }
-
-  .remote-a-subtitle {
-    font-size: 0.875rem;
-  }
-
-  .remote-a-content {
-    gap: 0.75rem;
-    margin-top: 1rem;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
 }
 
 .remote-a-card {
+  container-type: inline-size;
+  container-name: card;
   background: #c5e8f0;
   border: 1px solid #a8dce8;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-.card-title {
-  font-size: 1.5rem;
+.remote-a-card .card-title {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 600;
-  margin: 0 0 1rem 0;
+  margin: 0 0 clamp(0.5rem, 1.5vw, 1rem) 0;
   color: #2d3748;
 }
 
-@media (max-width: 768px) {
-  .remote-a-card {
-    padding: 1.5rem;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .remote-a-card {
-    padding: 1rem;
-  }
-
-  .card-title {
-    font-size: 1.125rem;
-  }
+.remote-a-card p {
+  max-inline-size: 65ch;
+  margin: 0;
+  color: #2d3748;
 }
 
 .capability-list {
@@ -131,6 +76,6 @@
 }
 
 .capability-list li {
-  padding: 0.5rem 0;
+  padding: clamp(0.25rem, 1vw, 0.5rem) 0;
   color: #2d3748;
 }

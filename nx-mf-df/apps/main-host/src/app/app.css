@@ -1,15 +1,13 @@
 .app-layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-areas:
     'header'
     'main'
     'footer';
-  height: 100vh;
   min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
+  min-height: 100dvh;
 }
 
 nx-mf-df-header {
@@ -20,7 +18,6 @@ nx-mf-df-header {
 nx-mf-df-main {
   grid-area: main;
   min-height: 0;
-  overflow: hidden;
   display: block;
 }
 

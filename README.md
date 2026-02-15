@@ -93,6 +93,33 @@ Tailwind CSS v4 is installed and configured for all apps (main-host and remotes)
 
 **Reference:** [Install Tailwind CSS with Angular](https://tailwindcss.com/docs/installation/framework-guides/angular)
 
+## Responsiveness
+
+Modern CSS for responsive layouts relies on a few key features. Use them so layouts and typography scale with viewport and container size without an explosion of media queries.
+
+### Main features
+
+| Feature | Purpose | Example |
+|--------|--------|--------|
+| **`clamp(min, preferred, max)`** | Constrains a value between a minimum and maximum; the middle value is the “preferred” size that grows/shrinks with context (e.g. viewport). Ideal for fluid typography, spacing, and widths. | `font-size: clamp(1rem, 2vw + 1rem, 2rem);` — text scales between 1rem and 2rem based on viewport. |
+| **`@container`** | Container queries let you style based on the **container’s** size, not the viewport. Components can adapt when their wrapper is narrow or wide, so the same component works in sidebars, main content, or full width. | `@container (min-width: 400px) { .card { grid-template-columns: 1fr 1fr; } }` — card switches to two columns when its container is wide enough. |
+| **`minmax(min, max)`** | In Grid, defines a track that is at least `min` and at most `max`. Makes columns/rows flexible: they don’t collapse below `min` and don’t grow beyond `max`. | `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));` — as many columns as fit, each between 200px and 1fr. |
+| **`repeat()`** | Defines repeated grid tracks. Use a number (`repeat(3, 1fr)`) or auto patterns (`repeat(auto-fill, minmax(150px, 1fr))`) to avoid writing the same track many times and to get responsive grids. | `repeat(auto-fill, minmax(12rem, 1fr))` — auto-fill creates as many columns as fit with a minimum of 12rem. |
+
+Use **`container-type: inline-size`** (or `size`) on a parent when using `@container` so that queries resolve against that element.
+
+### Preferred units for responsiveness
+
+| Unit | Best for | Why |
+|------|-----------|-----|
+| **`rem`** | Font sizes, spacing, padding, margins | Respects user font-size preferences (accessibility); scales consistently across the app. |
+| **`%`** | Widths and sometimes heights relative to container | Directly tied to parent size; good for fluid layouts. |
+| **`fr`** | Grid column/row sizes | Fraction of free space; combines well with `minmax()` for flexible grids. |
+| **`ch`** | Max-width of text blocks | Roughly one character width; keeps line length readable (e.g. `max-width: 65ch`). |
+| **`vw` / `vh`** | Used **inside** `clamp()` or `min()`/`max()` for viewport-based scaling | Raw viewport units can be too extreme; clamping keeps values in a safe range. |
+
+Avoid using fixed `px` for typography and key layout dimensions; prefer `rem` (and `clamp()` for fluid scaling) so the layout stays responsive and accessible.
+
 ## This project is under construction!
 
 ### Known bugs and TODOs:
@@ -197,6 +224,52 @@ pnpm build:all
 # or equivalent Nx command:
 npx nx run-many -t build
 ```
+
+## Run in Docker
+
+The project can be run fully in Docker: the host and all remotes are started as separate services with health checks. Run from the repository root (where `docker-compose.yml` lives).
+
+| Command | Purpose |
+|--------|--------|
+| `docker-compose up --build` | Build images (if needed) and start all services (main-host on 4200, remotes on 4201, 4202, 4203). Use `--build` to force a rebuild after code or Dockerfile changes. |
+| `docker-compose up -d --build` | Same as above but run in the background (detached). |
+| `docker-compose down` | Stop and remove the containers. Leaves images and volumes. |
+| `docker-compose down -v` | Stop and remove the containers **and** remove named volumes (`-v`). Use when you want a clean state (e.g. to clear volume-backed data). |
+| `docker-compose ps` | List running services and their status. |
+| `docker-compose logs -f` | Stream logs from all services. Add a service name (e.g. `main-host`) to follow only that service. |
+| `docker-compose restart <service>` | Restart a single service (e.g. `main-host`, `mf-remote-a`). |
+
+The main host depends on the three remotes being healthy, so remotes start first; once they pass their health checks, the host is started.
+
+## Scripts
+
+All scripts are defined in `nx-mf-df/package.json` and should be run from the `nx-mf-df` directory (e.g. `pnpm <script>` or `npm run <script>`).
+
+| Script | Purpose |
+|--------|--------|
+| `start` | Serve the main host app in development (Nx serve main-host); starts remotes automatically when configured. |
+| `serve` | Alias for `start`; serves the main host. |
+| `build:main-host` | Build the main host application (development config). |
+| `build:main-host:prod` | Build the main host with production configuration. |
+| `build:mf-remote-a` | Build the `mf_remote_a` remote app (dev). |
+| `build:mf-remote-a:prod` | Build `mf_remote_a` with production config. |
+| `build:mf-remote-b` | Build the `mf_remote_b` remote app (dev). |
+| `build:mf-remote-b:prod` | Build `mf_remote_b` with production config. |
+| `build:mf-remote-home` | Build the `mf_remote_home` remote app (dev). |
+| `build:mf-remote-home:prod` | Build `mf_remote_home` with production config. |
+| `build:common-ui-lib` | Build the shared `common-ui-lib` library (dev). |
+| `build:common-ui-lib:prod` | Build `common-ui-lib` with production config. |
+| `build:libs` | Build all projects tagged as libraries (`tag:type:lib`). |
+| `build:libs:prod` | Build all libraries with production config. |
+| `build:apps` | Build all projects tagged as applications (`tag:type:app`). |
+| `build:apps:prod` | Build all apps with production config. |
+| `build:all` | Build every project in the workspace. |
+| `build:all:prod` | Build every project with production config. |
+| `lint:common-ui-lib` | Lint the `common-ui-lib` library. |
+| `lint:libs` | Lint all projects tagged as libraries. |
+| `lint:apps` | Lint all application projects. |
+| `lint:all` | Lint the entire workspace. |
+| `show-ignored-build-scripts` | Run the helper script that lists build scripts ignored by Nx (for debugging/audit). |
 
 ## Available Scripts
 

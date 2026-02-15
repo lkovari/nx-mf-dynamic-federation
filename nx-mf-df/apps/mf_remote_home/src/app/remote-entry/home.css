@@ -1,127 +1,72 @@
 .home-container {
-  max-width: 1200px;
+  container-type: inline-size;
+  container-name: home;
+  max-inline-size: min(1200px, 100%);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 clamp(0.5rem, 4vw, 1rem);
 }
 
 .home-hero {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem);
   background-color: #c8efe5;
   color: #2d3748;
   border-radius: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .home-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   color: #2d3748;
   font-weight: 700;
-  margin: 0 0 1rem 0;
+  margin: 0 0 clamp(0.75rem, 2vw, 1rem) 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-inline-size: 65ch;
+  margin-inline: auto;
 }
 
 .home-subtitle {
-  font-size: 1.25rem;
+  font-size: clamp(0.875rem, 2vw, 1.25rem);
   margin: 0;
   color: #2d3748;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-inline-size: 65ch;
+  margin-inline: auto;
 }
 
 .home-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .home-container {
-    padding: 0 0.75rem;
-  }
-
-  .home-hero {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .home-title {
-    font-size: 1.75rem;
-  }
-
-  .home-subtitle {
-    font-size: 1rem;
-  }
-
-  .home-content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-container {
-    padding: 0 0.5rem;
-  }
-
-  .home-hero {
-    padding: 1.5rem 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .home-title {
-    font-size: 1.5rem;
-  }
-
-  .home-subtitle {
-    font-size: 0.875rem;
-  }
-
-  .home-content {
-    gap: 0.75rem;
-    margin-top: 1rem;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
 }
 
 .home-card {
+  container-type: inline-size;
+  container-name: card;
   background: #c8efe5;
   border: 1px solid #b0e5d8;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 600;
-  margin: 0 0 1rem 0;
+  margin: 0 0 clamp(0.5rem, 1.5vw, 1rem) 0;
   color: #2d3748;
 }
 
-@media (max-width: 768px) {
-  .home-card {
-    padding: 1.5rem;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-card {
-    padding: 1rem;
-  }
-
-  .card-title {
-    font-size: 1.125rem;
-  }
+.home-card p {
+  max-inline-size: 65ch;
+  margin: 0;
+  color: #2d3748;
 }
 
 .feature-list {
@@ -131,22 +76,22 @@
 }
 
 .feature-list li {
-  padding: 0.5rem 0;
+  padding: clamp(0.25rem, 1vw, 0.5rem) 0;
   color: #2d3748;
 }
 
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: clamp(0.5rem, 1.5vw, 0.75rem);
 }
 
 .tech-badge {
   background-color: #c8efe5;
   color: #2d3748;
-  padding: 0.5rem 1rem;
+  padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
   border-radius: 1.5rem;
-  font-size: 0.875rem;
+  font-size: clamp(0.8125rem, 1.8vw, 0.875rem);
   font-weight: 500;
 }
 
@@ -163,7 +108,7 @@
   color: magenta;
   padding: 0;
   border-radius: 0;
-  font-size: 0.875rem;
+  font-size: clamp(0.8125rem, 1.8vw, 0.875rem);
   font-weight: normal;
   margin: 0;
   display: inline-block;
@@ -182,7 +127,7 @@
   color: magenta;
   padding: 0;
   border-radius: 0;
-  font-size: 0.875rem;
+  font-size: clamp(0.8125rem, 1.8vw, 0.875rem);
   font-weight: normal;
   margin: 0;
   display: inline-block;
