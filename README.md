@@ -31,7 +31,7 @@ The host does not know these URLs at build time; they are read from this file at
 | What | Where |
 |------|--------|
 | File | `nx-mf-df/apps/main-host/src/main.ts` |
-| Flow | Line 3: `fetch('/module-federation.manifest.json')` → Line 4: `res.json()` → `definitions: Record<string, string>` → Lines 5–6: `setRemoteDefinitions(definitions)` from `@nx/angular/mf` → Lines 7–8: `import('./bootstrap')` to start Angular |
+| Flow | Line 3: `fetch('/module-federation.manifest.json')` → Line 4: `res.json()` → `definitions: Record<string, string>` → Lines 5–6: `setRemoteDefinitions(definitions)` from `@nx/angular/mf` → Lines 7–8: `import('./bootstrap')` to start Angular → Line 9: `.catch()` for errors |
 | Import | Line 1: `setRemoteDefinitions` from `@nx/angular/mf` |
 
 Remotes are defined only from the manifest at runtime, not from webpack config.
@@ -50,7 +50,7 @@ The host bundle has no static remote URLs; everything is dynamic.
 | What | Where |
 |------|--------|
 | Files | `nx-mf-df/apps/main-host/webpack.config.ts`, `nx-mf-df/apps/main-host/webpack.prod.config.ts` |
-| Relevant | In both: line 4: `export default withModuleFederation(config, { dts: false });` — no `remotes` override passed to `withModuleFederation` |
+| Relevant | In both: Line 4: `export default withModuleFederation(config, { dts: false });` — no `remotes` override passed to `withModuleFederation` |
 
 No remote URLs are embedded in the build.
 
@@ -61,8 +61,8 @@ No remote URLs are embedded in the build.
 | File | `nx-mf-df/apps/main-host/src/app/app.routes.ts` |
 | Import | Line 1: `loadRemoteModule` from `@nx/angular/mf` (no static `import('mf_remote_*/Routes')`) |
 | Helper | Lines 4–20: `getRemoteRoutes(m)` — reads `remoteRoutes` from the loaded module (direct, `default.remoteRoutes`, or via `Object.entries`) |
-| Loader | Lines 22–29: `remoteRoutes(remoteName)` returns a function that calls `loadRemoteModule(remoteName, './Routes')` (line 24), then `getRemoteRoutes(m)` (line 25), with `.catch()` for errors (lines 26–28) |
-| Route entries | Lines 31–48: `appRoutes` — each of `mf_remote_home`, `mf_remote_a`, `mf_remote_b` uses `loadChildren: remoteRoutes('...')` (lines 34, 38, 42); default redirect at lines 45–48 |
+| Loader | Lines 21–29: `remoteRoutes(remoteName)` returns a function that calls `loadRemoteModule(remoteName, './Routes')` (line 23), then `getRemoteRoutes(m)` (line 24), with `.catch()` for errors (lines 25–28) |
+| Route entries | Lines 31–48: `appRoutes` — each of `mf_remote_home`, `mf_remote_a`, `mf_remote_b` uses `loadChildren: remoteRoutes('...')` (lines 34, 38, 42); default redirect at lines 44–48 |
 
 All remote route loading goes through the dynamic API and manifest-defined URLs.
 
