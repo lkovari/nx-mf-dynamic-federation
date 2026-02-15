@@ -9,6 +9,6 @@ import { AngularVersion, NxVersion } from '@nx-mf-df/common-ui-lib';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Footer {
-  protected readonly currentYear = new Date().getFullYear();
+  protected readonly copyrightYear = 2026;
   protected readonly versionTextStyle = { color: 'magenta' };
 }

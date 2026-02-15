@@ -23,7 +23,7 @@
       <ul class="feature-list">
         <li>Standalone Angular components</li>
         <li>OnPush change detection</li>
-        <li>Modern Angular v21 best practices</li>
+        <li>Modern Angular v<lib-angular-version [textStyle]="versionTextStyle"></lib-angular-version> best practices</li>
         <li>Dynamic module federation</li>
         <li>Independent deployment</li>
       </ul>
@@ -31,15 +31,15 @@
 
     <div class="home-card">
       <h2 class="card-title">Technology Stack</h2>
-      <div class="tech-stack">
-        Angular v<lib-angular-version [textStyle]="versionTextStyle"></lib-angular-version>
-        Nx v<lib-nx-version [textStyle]="versionTextStyle"></lib-nx-version>
-        <span class="tech-badge">Dynamic Module Federation</span>
-        <span class="tech-badge">Tailwind</span>
-        <span class="tech-badge">TypeScript</span>
-        <span class="tech-badge">Vite</span>
-        <span class="tech-badge">Vitest</span>
-      </div>
+      <ul class="tech-stack-list">
+        <li>Angular v<lib-angular-version [textStyle]="versionTextStyle"></lib-angular-version></li>
+        <li>Nx v<lib-nx-version [textStyle]="versionTextStyle"></lib-nx-version></li>
+        <li>Dynamic Module Federation</li>
+        <li class="tech-badge">Tailwind</li>
+        <li>TypeScript</li>
+        <li>Vite</li>
+        <li>Vitest</li>
+      </ul>
     </div>
   </div>
 </div>

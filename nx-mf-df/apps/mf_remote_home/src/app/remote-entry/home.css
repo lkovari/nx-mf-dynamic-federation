@@ -70,29 +70,23 @@
 }
 
 .feature-list {
-  list-style: none;
+  list-style: square;
   padding: 0;
   margin: 0;
 }
 
 .feature-list li {
-  padding: clamp(0.25rem, 1vw, 0.5rem) 0;
   color: #2d3748;
 }
 
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+.tech-stack-list {
+  list-style: square;
+  padding: 0;
+  margin: 0;
 }
 
-.tech-badge {
-  background-color: #c8efe5;
+.tech-stack li {
   color: #2d3748;
-  padding: clamp(0.375rem, 1vw, 0.5rem) clamp(0.75rem, 2vw, 1rem);
-  border-radius: 1.5rem;
-  font-size: clamp(0.8125rem, 1.8vw, 0.875rem);
-  font-weight: 500;
 }
 
 .tech-stack lib-angular-version {

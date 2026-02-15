@@ -18,7 +18,7 @@
     </div>
 
     <div class="remote-b-card">
-      <h2 class="card-title">ToDo</h2>
+      <h2 class="card-title">Workspace ToDo</h2>
       <ul class="todo-list">
         <li>Global error handling</li>
         <li>HTTP interceptor to add Corelation Id</li>
@@ -34,9 +34,41 @@
     <div class="remote-b-card">
       <h2 class="card-title">Architecture</h2>
       <p>
-        Each remote operates as an independent application with its own build process,
-        allowing for optimal performance and maintainability.
+        I read a good article on the
+        <a class="remote-b-link" href="https://nx.dev/blog/architecting-angular-applications" target="_blank"
+          rel="noopener noreferrer">
+          Nx Blog
+        </a>
+        that can be a guide on architectural topics.
       </p>
+      <div
+        class="remote-b-video-wrapper"
+        role="button"
+        tabindex="0"
+        (click)="openVideoOverlay()"
+        (keydown.enter)="openVideoOverlay()"
+        (keydown.space)="openVideoOverlay()"
+      >
+        <video autoplay muted loop playsinline class="remote-b-video">
+          <source src="https://nx.dev/documentation/blog/media/layered-to-domain-areas.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
 </div>
+
+@if (videoOverlayOpen()) {
+  <div
+    class="remote-b-overlay"
+    (click)="closeVideoOverlay()"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Video overlay"
+  >
+    <div class="remote-b-overlay__content" (click)="closeVideoOverlay()">
+      <video autoplay muted loop playsinline class="remote-b-overlay__video">
+        <source src="https://nx.dev/documentation/blog/media/layered-to-domain-areas.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+}
