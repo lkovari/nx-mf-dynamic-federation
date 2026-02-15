@@ -39,36 +39,10 @@
           rel="noopener noreferrer">
           Nx Blog
         </a>
-        that can be a guide on architectural topics.
+        that can be a guide on architectural topics. Check the video about <a class="remote-b-link"
+          href="https://nx.dev/documentation/blog/media/layered-to-domain-areas.mp4" target="_blank"
+          rel="noopener noreferrer">Vertical sliceing</a>.
       </p>
-      <div
-        class="remote-b-video-wrapper"
-        role="button"
-        tabindex="0"
-        (click)="openVideoOverlay()"
-        (keydown.enter)="openVideoOverlay()"
-        (keydown.space)="openVideoOverlay()"
-      >
-        <video autoplay muted loop playsinline class="remote-b-video">
-          <source src="https://nx.dev/documentation/blog/media/layered-to-domain-areas.mp4" type="video/mp4">
-        </video>
-      </div>
     </div>
   </div>
 </div>
-
-@if (videoOverlayOpen()) {
-  <div
-    class="remote-b-overlay"
-    (click)="closeVideoOverlay()"
-    role="dialog"
-    aria-modal="true"
-    aria-label="Video overlay"
-  >
-    <div class="remote-b-overlay__content" (click)="closeVideoOverlay()">
-      <video autoplay muted loop playsinline class="remote-b-overlay__video">
-        <source src="https://nx.dev/documentation/blog/media/layered-to-domain-areas.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-}

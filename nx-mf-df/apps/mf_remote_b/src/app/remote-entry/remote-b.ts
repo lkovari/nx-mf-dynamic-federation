@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'nx-mf-df-remote-b',
@@ -6,14 +6,4 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   styleUrl: './remote-b.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RemoteB {
-  readonly videoOverlayOpen = signal(false);
-
-  openVideoOverlay(): void {
-    this.videoOverlayOpen.set(true);
-  }
-
-  closeVideoOverlay(): void {
-    this.videoOverlayOpen.set(false);
-  }
-}
+export class RemoteB {}
