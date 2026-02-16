@@ -38,7 +38,7 @@
     "ghDeploy:mf-remote-a": "pnpm run prepare-gh-pages && gh-pages -d dist-gh -b gh-pages -t",
     "ghDeploy:mf-remote-b": "pnpm run prepare-gh-pages && gh-pages -d dist-gh -b gh-pages -t",
     "ghDeploy:mf-remote-home": "pnpm run prepare-gh-pages && gh-pages -d dist-gh -b gh-pages -t",
-    "ghDeploy:all:force": "pnpm run prepare-gh-pages && gh-pages -d dist-gh -b gh-pages -t --force"
+    "ghDeploy:all:force": "pnpm run prepare-gh-pages && gh-pages -d dist-gh -b gh-pages -t -f"
   },
   "private": true,
   "devDependencies": {
