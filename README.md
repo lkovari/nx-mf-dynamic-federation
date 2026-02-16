@@ -13,6 +13,8 @@ https://wirefuture.com/post/angular-best-practices-building-scalable-application
 https://nx.dev/blog/architecting-angular-applications
 https://dev-academy.com/angular-architecture-best-practices/
 
+The file `nx-mf-df/docs/fe-microfrontend-architecture-proposal_hu.md` contains the proposal skeleton in Hungarian language.
+
 ## How it works (Dynamic Federation)
 
 The host loads all remotes at **runtime** from a manifest. No remote URLs are baked into the host build.
