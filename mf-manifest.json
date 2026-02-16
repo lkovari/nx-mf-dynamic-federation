@@ -30,12 +30,12 @@
       "name": "@angular/common/http",
       "version": "21.1.1",
       "singleton": true,
-      "requiredVersion": "~21.1.0",
+      "requiredVersion": "^21.1.1",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "763.1559250b1f7b0aaf.js"
+            "763.661a11dac83feb27.js"
           ]
         },
         "css": {
@@ -49,12 +49,12 @@
       "name": "@angular/common",
       "version": "21.1.1",
       "singleton": true,
-      "requiredVersion": "~21.1.0",
+      "requiredVersion": "^21.1.1",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "3.2ceb3e317d06c843.js"
+            "3.589397ffe81dab7f.js"
           ]
         },
         "css": {
@@ -68,12 +68,13 @@
       "name": "@angular/core/primitives/di",
       "version": "21.1.1",
       "singleton": true,
-      "requiredVersion": "~21.1.0",
+      "requiredVersion": "^21.1.1",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "common.55162622a34e4756.js"
+            "549.74fa27118e330f85.js",
+            "983.3a9f2fad65c71e20.js"
           ]
         },
         "css": {
@@ -87,12 +88,12 @@
       "name": "@angular/core/primitives/signals",
       "version": "21.1.1",
       "singleton": true,
-      "requiredVersion": "~21.1.0",
+      "requiredVersion": "^21.1.1",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "common.55162622a34e4756.js"
+            "109.b15e9d84d1951ed3.js"
           ]
         },
         "css": {
@@ -106,12 +107,12 @@
       "name": "@angular/core",
       "version": "21.1.1",
       "singleton": true,
-      "requiredVersion": "~21.1.0",
+      "requiredVersion": "^21.1.1",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "549.939e86e5c5f1f902.js"
+            "549.74fa27118e330f85.js"
           ]
         },
         "css": {
@@ -125,12 +126,12 @@
       "name": "@angular/platform-browser",
       "version": "21.1.1",
       "singleton": true,
-      "requiredVersion": "~21.1.0",
+      "requiredVersion": "^21.1.1",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "622.13db3aa32806d9e3.js"
+            "622.6c9f41744dba69b9.js"
           ]
         },
         "css": {
@@ -144,12 +145,12 @@
       "name": "@angular/router",
       "version": "21.1.1",
       "singleton": true,
-      "requiredVersion": "~21.1.0",
+      "requiredVersion": "^21.1.1",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "107.d080c1c157840081.js"
+            "107.07060d4171336f70.js"
           ]
         },
         "css": {
@@ -168,7 +169,7 @@
         "js": {
           "async": [],
           "sync": [
-            "common.55162622a34e4756.js"
+            "common.280ea258c25fe626.js"
           ]
         },
         "css": {
