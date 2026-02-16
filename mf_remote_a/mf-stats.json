@@ -1,0 +1,212 @@
+{
+  "id": "mf_remote_a",
+  "name": "mf_remote_a",
+  "metaData": {
+    "name": "mf_remote_a",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "@nx-mf-df/source"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.mjs",
+      "path": "",
+      "type": "module"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "mf_remote_a",
+    "pluginVersion": "0.21.6",
+    "prefetchInterface": false,
+    "publicPath": "/nx-mf-dynamic-federation/mf_remote_a/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^21.1.1",
+      "shareScope": "default",
+      "strictVersion": false,
+      "name": "@angular/common/http",
+      "version": "21.1.1",
+      "eager": false,
+      "id": "mf_remote_a:@angular/common/http",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "763.5e17b98ff565d2e3.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^21.1.1",
+      "shareScope": "default",
+      "strictVersion": false,
+      "name": "@angular/common",
+      "version": "21.1.1",
+      "eager": false,
+      "id": "mf_remote_a:@angular/common",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "3.c7767e67958071dd.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^21.1.1",
+      "shareScope": "default",
+      "strictVersion": false,
+      "name": "@angular/core/primitives/di",
+      "version": "21.1.1",
+      "eager": false,
+      "id": "mf_remote_a:@angular/core/primitives/di",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.a5b44d918f8fb09d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^21.1.1",
+      "shareScope": "default",
+      "strictVersion": false,
+      "name": "@angular/core/primitives/signals",
+      "version": "21.1.1",
+      "eager": false,
+      "id": "mf_remote_a:@angular/core/primitives/signals",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "common.a5b44d918f8fb09d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^21.1.1",
+      "shareScope": "default",
+      "strictVersion": false,
+      "name": "@angular/core",
+      "version": "21.1.1",
+      "eager": false,
+      "id": "mf_remote_a:@angular/core",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "549.d0b4c088a1bbbfcd.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^21.1.1",
+      "shareScope": "default",
+      "strictVersion": false,
+      "name": "@angular/platform-browser",
+      "version": "21.1.1",
+      "eager": false,
+      "id": "mf_remote_a:@angular/platform-browser",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "622.5c9d5f06f3c5d2de.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^21.1.1",
+      "shareScope": "default",
+      "strictVersion": false,
+      "name": "@angular/router",
+      "version": "21.1.1",
+      "eager": false,
+      "id": "mf_remote_a:@angular/router",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "107.921440fe7795785b.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "./Routes",
+      "id": "mf_remote_a:Routes",
+      "name": "Routes",
+      "requires": [],
+      "file": "apps/mf_remote_a/src/app/remote-entry/entry.routes.ts",
+      "assets": {
+        "js": {
+          "sync": [
+            "__federation_expose_Routes.24a3a6c8f37d97f2.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    }
+  ]
+}

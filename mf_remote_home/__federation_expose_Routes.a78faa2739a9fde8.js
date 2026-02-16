@@ -1,0 +1,1 @@
+(self.webpackChunkmf_remote_home=self.webpackChunkmf_remote_home||[]).push([[286,411,722],{2792(h,o,e){e.r(o),e.d(o,{remoteRoutes:()=>t});const t=[{path:"",component:e(7939).w}]}}]);

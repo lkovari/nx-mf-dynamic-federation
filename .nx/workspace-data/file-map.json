@@ -1,0 +1,671 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.4.1",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "mf_remote_b": [
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/eslint.config.mjs",
+          "hash": "6635911569312005083"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/module-federation.config.ts",
+          "hash": "10839840075127037294"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/project.json",
+          "hash": "11768017648780514052"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/app.config.ts",
+          "hash": "4436923392211261843"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/app.routes.ts",
+          "hash": "12432514961207439410"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/remote-entry/entry.routes.ts",
+          "hash": "9185202737329652027"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/remote-entry/entry.ts",
+          "hash": "5054911456607675965"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/remote-entry/nx-welcome.ts",
+          "hash": "7636393325284871681"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/remote-entry/remote-b.html",
+          "hash": "10599654055586271739"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/remote-entry/remote-b.scss",
+          "hash": "16517600937536981433"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/app/remote-entry/remote-b.ts",
+          "hash": "1290952980874393906"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/bootstrap.ts",
+          "hash": "13646108659156824644"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/index.html",
+          "hash": "1573863870307077132"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/main.ts",
+          "hash": "14701344671644104227"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/src/test-setup.ts",
+          "hash": "5201386931146563638"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/tsconfig.app.json",
+          "hash": "3131509303107438102"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/tsconfig.json",
+          "hash": "16004134237605501702"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/tsconfig.spec.json",
+          "hash": "11359119564988205903"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/vite.config.mts",
+          "hash": "10641882287999504360"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/webpack.config.ts",
+          "hash": "383329064200880040"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b/webpack.prod.config.ts",
+          "hash": "2861062658584108841"
+        }
+      ],
+      "mf_remote_home-e2e": [
+        {
+          "file": "nx-mf-df/apps/mf_remote_home-e2e/eslint.config.mjs",
+          "hash": "1172734138943286526"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home-e2e/playwright.config.ts",
+          "hash": "4512696617344014480"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home-e2e/project.json",
+          "hash": "1022419077852562371"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home-e2e/tsconfig.json",
+          "hash": "15726545290547512047"
+        }
+      ],
+      "mf_remote_a-e2e": [
+        {
+          "file": "nx-mf-df/apps/mf_remote_a-e2e/eslint.config.mjs",
+          "hash": "1172734138943286526"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a-e2e/playwright.config.ts",
+          "hash": "14299021856254274049"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a-e2e/project.json",
+          "hash": "12283214078347844733"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a-e2e/tsconfig.json",
+          "hash": "15726545290547512047"
+        }
+      ],
+      "main-host-e2e": [
+        {
+          "file": "nx-mf-df/apps/main-host-e2e/eslint.config.mjs",
+          "hash": "1172734138943286526"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host-e2e/playwright.config.ts",
+          "hash": "7728342201915617576"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host-e2e/project.json",
+          "hash": "374706883909397082"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host-e2e/tsconfig.json",
+          "hash": "15726545290547512047"
+        }
+      ],
+      "main-host": [
+        {
+          "file": "nx-mf-df/apps/main-host/eslint.config.mjs",
+          "hash": "6635911569312005083"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/module-federation.config.ts",
+          "hash": "1605683635196904437"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/project.json",
+          "hash": "8362229463705785633"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/app.config.ts",
+          "hash": "4436923392211261843"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/app.html",
+          "hash": "1214165692056918214"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/app.routes.ts",
+          "hash": "10653095897449208094"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/app.scss",
+          "hash": "7625746920246110112"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/app.spec.ts",
+          "hash": "3964721075139646539"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/app.ts",
+          "hash": "9527066516212076604"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/footer.html",
+          "hash": "14565366245416228987"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/footer.scss",
+          "hash": "10573823494030089100"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/footer.ts",
+          "hash": "18312375866098186030"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/header.html",
+          "hash": "14656460773780358093"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/header.scss",
+          "hash": "3104632520357084724"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/header.ts",
+          "hash": "7860036620279087780"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/main.html",
+          "hash": "3774768050243225147"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/main.scss",
+          "hash": "15235693044890515148"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/main.ts",
+          "hash": "806841833970511006"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/nx-welcome.ts",
+          "hash": "10547628749863082346"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/sidebar.html",
+          "hash": "3987649200244063874"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/sidebar.scss",
+          "hash": "12049498883953798207"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/app/sidebar.ts",
+          "hash": "13203315499323545007"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/bootstrap.ts",
+          "hash": "3314327030169821486"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/index.html",
+          "hash": "2589572061646602596"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/main.ts",
+          "hash": "14701344671644104227"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/styles.scss",
+          "hash": "13259840194721332412"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/src/test-setup.ts",
+          "hash": "5201386931146563638"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/tsconfig.app.json",
+          "hash": "8906578934682869468"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/tsconfig.json",
+          "hash": "16004134237605501702"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/tsconfig.spec.json",
+          "hash": "11359119564988205903"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/vite.config.mts",
+          "hash": "3991430688753117710"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/webpack.config.ts",
+          "hash": "383329064200880040"
+        },
+        {
+          "file": "nx-mf-df/apps/main-host/webpack.prod.config.ts",
+          "hash": "2861062658584108841"
+        }
+      ],
+      "mf_remote_b-e2e": [
+        {
+          "file": "nx-mf-df/apps/mf_remote_b-e2e/eslint.config.mjs",
+          "hash": "1172734138943286526"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b-e2e/playwright.config.ts",
+          "hash": "6956573359923082473"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b-e2e/project.json",
+          "hash": "6717660971386378019"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_b-e2e/tsconfig.json",
+          "hash": "15726545290547512047"
+        }
+      ],
+      "mf_remote_a": [
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/eslint.config.mjs",
+          "hash": "6635911569312005083"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/module-federation.config.ts",
+          "hash": "17907483655784968327"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/project.json",
+          "hash": "5939107277465834672"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/app.config.ts",
+          "hash": "4436923392211261843"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/app.routes.ts",
+          "hash": "12432514961207439410"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/remote-entry/entry.routes.ts",
+          "hash": "9297444375149500074"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/remote-entry/entry.ts",
+          "hash": "10078176693906295236"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/remote-entry/nx-welcome.ts",
+          "hash": "3367045527338773524"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/remote-entry/remote-a.html",
+          "hash": "4552561961593539332"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/remote-entry/remote-a.scss",
+          "hash": "14113429234335934764"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/app/remote-entry/remote-a.ts",
+          "hash": "10428463728506641862"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/bootstrap.ts",
+          "hash": "13646108659156824644"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/index.html",
+          "hash": "12947800069669853506"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/main.ts",
+          "hash": "14701344671644104227"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/src/test-setup.ts",
+          "hash": "5201386931146563638"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/tsconfig.app.json",
+          "hash": "3131509303107438102"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/tsconfig.json",
+          "hash": "16004134237605501702"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/tsconfig.spec.json",
+          "hash": "11359119564988205903"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/vite.config.mts",
+          "hash": "967965266185055479"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/webpack.config.ts",
+          "hash": "383329064200880040"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_a/webpack.prod.config.ts",
+          "hash": "2861062658584108841"
+        }
+      ],
+      "mf_remote_home": [
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/eslint.config.mjs",
+          "hash": "6635911569312005083"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/module-federation.config.ts",
+          "hash": "11354027253025374626"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/project.json",
+          "hash": "586582434001459015"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/app.config.ts",
+          "hash": "4436923392211261843"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/app.routes.ts",
+          "hash": "12432514961207439410"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/remote-entry/entry.routes.ts",
+          "hash": "16016074860237666846"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/remote-entry/entry.ts",
+          "hash": "8906130825600932291"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/remote-entry/home.html",
+          "hash": "13167068540826805884"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/remote-entry/home.scss",
+          "hash": "3093055437910827182"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/remote-entry/home.ts",
+          "hash": "12086124931238855136"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/app/remote-entry/nx-welcome.ts",
+          "hash": "5343387759985525563"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/bootstrap.ts",
+          "hash": "13646108659156824644"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/index.html",
+          "hash": "2215644473193303295"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/main.ts",
+          "hash": "14701344671644104227"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/src/test-setup.ts",
+          "hash": "5201386931146563638"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/tsconfig.app.json",
+          "hash": "3131509303107438102"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/tsconfig.json",
+          "hash": "16004134237605501702"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/tsconfig.spec.json",
+          "hash": "11359119564988205903"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/vite.config.mts",
+          "hash": "1525696882803671831"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/webpack.config.ts",
+          "hash": "383329064200880040"
+        },
+        {
+          "file": "nx-mf-df/apps/mf_remote_home/webpack.prod.config.ts",
+          "hash": "2861062658584108841"
+        }
+      ],
+      "common-ui-lib": [
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/README.md",
+          "hash": "17428936321331382635"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/eslint.config.mjs",
+          "hash": "948695448186046999"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/ng-package.json",
+          "hash": "5610513442257573904"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/package.json",
+          "hash": "15513715007328633210"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/project.json",
+          "hash": "16269582266395062228"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/scripts/update-nx-version.js",
+          "hash": "12191222901315235434"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/index.ts",
+          "hash": "11931212806298887560"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/angular-version/angular-version.html",
+          "hash": "327321571815501682"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/angular-version/angular-version.scss",
+          "hash": "8028839584150236056"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/angular-version/angular-version.spec.ts",
+          "hash": "14037179547973884680"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/angular-version/angular-version.ts",
+          "hash": "16199150362683093585"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/nx-version/nx-version.constant.ts",
+          "hash": "11329239384676441685"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/nx-version/nx-version.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/nx-version/nx-version.html",
+          "hash": "17600970749087647465"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/nx-version/nx-version.scss",
+          "hash": "18307899919621885799"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/nx-version/nx-version.spec.ts",
+          "hash": "10538011098560619207"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/src/lib/nx-version/nx-version.ts",
+          "hash": "11191377753053858830"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/tsconfig.json",
+          "hash": "9608369235850420230"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/tsconfig.lib.json",
+          "hash": "12638920271521637410"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/tsconfig.lib.prod.json",
+          "hash": "10809217796916261822"
+        },
+        {
+          "file": "nx-mf-df/libs/common-ui-lib/tsconfig.spec.json",
+          "hash": "13919890687900665478"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": "LICENSE",
+        "hash": "9602412960548218689"
+      },
+      {
+        "file": "README.md",
+        "hash": "8062627964851085003"
+      },
+      {
+        "file": "nx-mf-df/.editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "nx-mf-df/.github/workflows/ci.yml",
+        "hash": "15972476574772798700"
+      },
+      {
+        "file": "nx-mf-df/.gitignore",
+        "hash": "5433846482543525433"
+      },
+      {
+        "file": "nx-mf-df/.prettierignore",
+        "hash": "5407418692668764289"
+      },
+      {
+        "file": "nx-mf-df/.prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "nx-mf-df/.vscode/extensions.json",
+        "hash": "13417776046909105611"
+      },
+      {
+        "file": "nx-mf-df/error.log",
+        "hash": "11384822276424010302"
+      },
+      {
+        "file": "nx-mf-df/eslint.config.mjs",
+        "hash": "7566070839603645918"
+      },
+      {
+        "file": "nx-mf-df/nx.json",
+        "hash": "8305475093956647095"
+      },
+      {
+        "file": "nx-mf-df/package.json",
+        "hash": "6114724843965994841"
+      },
+      {
+        "file": "nx-mf-df/pnpm-lock.yaml",
+        "hash": "6850493470540493769"
+      },
+      {
+        "file": "nx-mf-df/pnpm-workspace.yaml",
+        "hash": "6682635867443504162"
+      },
+      {
+        "file": "nx-mf-df/tsconfig.base.json",
+        "hash": "12700925657155758276"
+      },
+      {
+        "file": "nx-mf-df/vitest.workspace.ts",
+        "hash": "4665328684042819579"
+      }
+    ]
+  },
+  "externalNodesHash": "3244421341483603138"
+}

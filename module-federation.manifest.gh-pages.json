@@ -1,0 +1,5 @@
+{
+  "mf_remote_a": "/nx-mf-dynamic-federation/mf_remote_a/remoteEntry.mjs",
+  "mf_remote_b": "/nx-mf-dynamic-federation/mf_remote_b/remoteEntry.mjs",
+  "mf_remote_home": "/nx-mf-dynamic-federation/mf_remote_home/remoteEntry.mjs"
+}
