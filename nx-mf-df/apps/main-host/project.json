@@ -19,11 +19,6 @@
           {
             "glob": "**/*",
             "input": "apps/main-host/public"
-          },
-          {
-            "glob": "**/*",
-            "input": "docs",
-            "output": "/docs"
           }
         ],
         "styles": ["apps/main-host/src/styles.css"],

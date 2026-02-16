@@ -12,23 +12,12 @@ import { RouterModule } from '@angular/router';
 export class Header {
   readonly lastUpdate = Date.parse('2026-02-16T22:00:00');
   readonly docLocale = signal<'en' | 'hu'>('en');
-  readonly baseHref = signal('/');
-
-  readonly docHref = computed(() => {
-    const base = this.baseHref().endsWith('/') ? this.baseHref() : this.baseHref() + '/';
-    return `${base}docs/fe-microfrontend-architecture-proposal_${this.docLocale()}.md`;
-  });
+  readonly docHref = computed(() => `/docs/fe-microfrontend-architecture-proposal_${this.docLocale()}.md`);
 
   constructor() {
     afterNextRender(() => {
-      if (typeof navigator !== 'undefined') {
-        const lang = navigator.language?.startsWith('hu') ? 'hu' : 'en';
-        this.docLocale.set(lang);
-      }
-      if (typeof document !== 'undefined') {
-        const base = document.querySelector('base')?.getAttribute('href');
-        this.baseHref.set(base ?? '/');
-      }
+      const lang = typeof navigator !== 'undefined' && navigator.language?.startsWith('hu') ? 'hu' : 'en';
+      this.docLocale.set(lang);
     });
   }
 }
