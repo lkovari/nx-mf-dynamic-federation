@@ -10,8 +10,10 @@ RUN pnpm install --frozen-lockfile
 
 COPY . ./
 
-RUN apk add --no-cache curl
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
 EXPOSE 4200 4201 4202 4203
 
+ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["pnpm", "start"]

@@ -1,34 +1,4 @@
 services:
-  main-host:
-    build:
-      context: ./nx-mf-df
-      dockerfile: ../Dockerfile
-    container_name: nx-mf-main-host
-    ports:
-      - "4200:4200"
-    volumes:
-      - ./nx-mf-df:/workspace
-    environment:
-      - NODE_ENV=development
-      - HOST=0.0.0.0
-    command: pnpm nx serve main-host
-    depends_on:
-      mf-remote-a:
-        condition: service_healthy
-      mf-remote-b:
-        condition: service_healthy
-      mf-remote-home:
-        condition: service_healthy
-    networks:
-      - nx-mf-network
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4200"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 120s
-
   mf-remote-a:
     build:
       context: ./nx-mf-df
@@ -38,6 +8,7 @@ services:
       - "4201:4201"
     volumes:
       - ./nx-mf-df:/workspace
+      - node_modules_remote_a:/workspace/node_modules
     environment:
       - NODE_ENV=development
       - HOST=0.0.0.0
@@ -45,12 +16,8 @@ services:
     networks:
       - nx-mf-network
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4201"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 120s
+    tty: true
+    stdin_open: true
 
   mf-remote-b:
     build:
@@ -61,6 +28,7 @@ services:
       - "4202:4202"
     volumes:
       - ./nx-mf-df:/workspace
+      - node_modules_remote_b:/workspace/node_modules
     environment:
       - NODE_ENV=development
       - HOST=0.0.0.0
@@ -68,12 +36,8 @@ services:
     networks:
       - nx-mf-network
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4202"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 120s
+    tty: true
+    stdin_open: true
 
   mf-remote-home:
     build:
@@ -84,6 +48,7 @@ services:
       - "4203:4203"
     volumes:
       - ./nx-mf-df:/workspace
+      - node_modules_remote_home:/workspace/node_modules
     environment:
       - NODE_ENV=development
       - HOST=0.0.0.0
@@ -91,13 +56,39 @@ services:
     networks:
       - nx-mf-network
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4203"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 120s
+    tty: true
+    stdin_open: true
+
+  main-host:
+    build:
+      context: ./nx-mf-df
+      dockerfile: ../Dockerfile
+    container_name: nx-mf-main-host
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./nx-mf-df:/workspace
+      - node_modules_main:/workspace/node_modules
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+    command: pnpm nx serve main-host
+    depends_on:
+      - mf-remote-a
+      - mf-remote-b
+      - mf-remote-home
+    networks:
+      - nx-mf-network
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
 
 networks:
   nx-mf-network:
     driver: bridge
+
+volumes:
+  node_modules_remote_a:
+  node_modules_remote_b:
+  node_modules_remote_home:
+  node_modules_main:
