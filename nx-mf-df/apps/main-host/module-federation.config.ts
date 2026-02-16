@@ -24,7 +24,20 @@ const config: ModuleFederationConfig = {
       EAGER_ANGULAR_PACKAGES_GH_PAGES.includes(libraryName) ||
       libraryName.startsWith('@angular/');
     if (isGhPagesBuild && isEagerPackage) {
-      return { ...sharedConfig, eager: true };
+      return {
+        ...sharedConfig,
+        eager: true,
+        strictVersion: false,
+        requiredVersion: false,
+      };
+    }
+    if (isGhPagesBuild && (libraryName.startsWith('@angular/') || libraryName === 'rxjs')) {
+      return {
+        ...sharedConfig,
+        singleton: true,
+        strictVersion: false,
+        requiredVersion: false,
+      };
     }
     return sharedConfig;
   },

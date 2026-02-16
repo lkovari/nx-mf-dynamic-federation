@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "ci": "pnpm install --frozen-lockfile",
     "start": "npx nx serve main-host",
     "serve": "npx nx serve main-host",
     "build:main-host": "npx nx build main-host",
@@ -28,8 +29,8 @@
     "show-ignored-build-scripts": "node scripts/show-ignored-build-scripts.js",
     "remove-dists": "rm -rf dist dist-gh",
     "prepare-gh-pages": "rm -rf dist-gh && mkdir dist-gh && cp -r dist/apps/main-host/* dist-gh/ && mkdir -p dist-gh/mf_remote_a && cp -r dist/apps/mf_remote_a/* dist-gh/mf_remote_a/ && rm -f dist-gh/mf_remote_a/index.html && mkdir -p dist-gh/mf_remote_b && cp -r dist/apps/mf_remote_b/* dist-gh/mf_remote_b/ && rm -f dist-gh/mf_remote_b/index.html && mkdir -p dist-gh/mf_remote_home && cp -r dist/apps/mf_remote_home/* dist-gh/mf_remote_home/ && rm -f dist-gh/mf_remote_home/index.html && cp dist-gh/index.html dist-gh/404.html && cp apps/main-host/public/module-federation.manifest.gh-pages.json dist-gh/module-federation.manifest.json && touch dist-gh/.nojekyll",
-    "ghBuildProd:all": "pnpm run build:common-ui-lib:prod && pnpm run build:mf-remote-a:prod && pnpm run build:mf-remote-b:prod && pnpm run build:mf-remote-home:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:main-host:prod",
-    "ghBuildProd:shell": "pnpm run build:common-ui-lib:prod && pnpm run build:mf-remote-a:prod && pnpm run build:mf-remote-b:prod && pnpm run build:mf-remote-home:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:main-host:prod",
+    "ghBuildProd:all": "pnpm run build:common-ui-lib:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:mf-remote-a:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:mf-remote-b:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:mf-remote-home:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:main-host:prod",
+    "ghBuildProd:shell": "pnpm run build:common-ui-lib:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:mf-remote-a:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:mf-remote-b:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:mf-remote-home:prod && NX_MF_GH_PAGES_BUILD=true pnpm run build:main-host:prod",
     "ghBuildProd:mf-remote-a": "pnpm run build:common-ui-lib:prod && pnpm run build:mf-remote-a:prod",
     "ghBuildProd:mf-remote-b": "pnpm run build:common-ui-lib:prod && pnpm run build:mf-remote-b:prod",
     "ghBuildProd:mf-remote-home": "pnpm run build:common-ui-lib:prod && pnpm run build:mf-remote-home:prod",
