@@ -10,5 +10,5 @@ import { RouterModule } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Header {
-  readonly lastUpdate = Date.parse('2025-02-15T10:30:00');
+  readonly lastUpdate = Date.parse('2026-02-15T10:30:00');
 }
