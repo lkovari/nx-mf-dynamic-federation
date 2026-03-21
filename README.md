@@ -1,5 +1,6 @@
 # nx-mf-dynamic-federation
 Advanced Angular Micro Frontends with Dynamic Module Federation.
+Last update: 1/15/2026 10:30 PM
 
 ## Based on the below websites
 https://nx.dev/docs/technologies/angular/guides/dynamic-module-federation-with-angular  
